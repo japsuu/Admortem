@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7542392db59964ead64836c01f1369, type: 3}
+  m_Name: TerrainSurface_NoiseSettings
+  m_EditorClassIdentifier: 
+  Amplitude: 54
+  Frequency: 4
+  Octaves: 2
+  Lacunarity: 0.19
+  Persistance: 0.57
+  WeightedStrength: 0.71
+  Invert: 0
+  NoiseType: 0
+  FractalType: 1
+  DiscardValues: 3
+  AmplitudeModSettings:
+    ModifierNoise: {fileID: 11400000, guid: 2cf3e7916f96df147a11f8c1310af860, type: 2}
+    ModifierType: 1
+    DiscardValues: 3
+    IgnoreAmplitude: 0
+  FrequencyModSettings:
+    ModifierNoise: {fileID: 11400000, guid: 8f1710e47c9329344945f5949b1d4e8d, type: 2}
+    ModifierType: 2
+    DiscardValues: 3
+    IgnoreAmplitude: 1
+  OctaveModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0
+  LacunarityModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 2
+    DiscardValues: 3
+    IgnoreAmplitude: 0
+  PersistanceModSettings:
+    ModifierNoise: {fileID: 11400000, guid: f224f081a3a705147be6b0fe92975523, type: 2}
+    ModifierType: 0
+    DiscardValues: 0
+    IgnoreAmplitude: 0
+  WeightedStrengthModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7542392db59964ead64836c01f1369, type: 3}
+  m_Name: AmplitudeMod
+  m_EditorClassIdentifier: 
+  Amplitude: 74
+  Frequency: 4
+  Octaves: 1
+  Lacunarity: 1
+  Persistance: 1
+  WeightedStrength: 1
+  Invert: 0
+  NoiseType: 0
+  FractalType: 1
+  DiscardValues: 3
+  AmplitudeModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0
+  FrequencyModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0
+  OctaveModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0
+  LacunarityModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0
+  PersistanceModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0
+  WeightedStrengthModSettings:
+    ModifierNoise: {fileID: 0}
+    ModifierType: 0
+    DiscardValues: 2
+    IgnoreAmplitude: 0
