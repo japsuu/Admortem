@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{d6b2d71f-4106-4193-ab8f-d7c55b5192ce}">
+		<property name="name">
+			<value>SfxStrength</value>
+		</property>
+		<relationship name="folder">
+			<destination>{693c3491-067f-48d4-abec-0a6350c45aba}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ffc0fd3d-08d7-470c-910a-bc111cedc7f4}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ffc0fd3d-08d7-470c-910a-bc111cedc7f4}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

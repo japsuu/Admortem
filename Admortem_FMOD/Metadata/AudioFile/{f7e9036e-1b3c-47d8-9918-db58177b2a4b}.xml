@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f7e9036e-1b3c-47d8-9918-db58177b2a4b}">
+		<property name="assetPath">
+			<value>grunting_4_sean.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.53426303854875279</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{debafcc8-0127-4c4b-ba93-af10d07992ee}</destination>
+		</relationship>
+	</object>
+</objects>

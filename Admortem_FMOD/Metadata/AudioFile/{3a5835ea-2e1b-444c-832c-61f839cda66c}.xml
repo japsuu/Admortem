@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{3a5835ea-2e1b-444c-832c-61f839cda66c}">
+		<property name="assetPath">
+			<value>music/DavidKBD - The Last Pack - Orchestra - 03.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>134.63414965986394</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{debafcc8-0127-4c4b-ba93-af10d07992ee}</destination>
+		</relationship>
+	</object>
+</objects>

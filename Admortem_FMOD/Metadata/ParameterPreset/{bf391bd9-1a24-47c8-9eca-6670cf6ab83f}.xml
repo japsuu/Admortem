@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{bf391bd9-1a24-47c8-9eca-6670cf6ab83f}">
+		<property name="name">
+			<value>FallSpeed</value>
+		</property>
+		<relationship name="folder">
+			<destination>{693c3491-067f-48d4-abec-0a6350c45aba}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f95fd3ab-68a5-4b50-9c79-9d0fb0ec9bba}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f95fd3ab-68a5-4b50-9c79-9d0fb0ec9bba}">
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{f690b14d-844b-455c-af2e-29951c585953}">
+		<property name="name">
+			<value>ClipIndex</value>
+		</property>
+		<relationship name="folder">
+			<destination>{693c3491-067f-48d4-abec-0a6350c45aba}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{7057f32d-da0d-471a-b590-2c664f7e655c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{7057f32d-da0d-471a-b590-2c664f7e655c}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>6</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

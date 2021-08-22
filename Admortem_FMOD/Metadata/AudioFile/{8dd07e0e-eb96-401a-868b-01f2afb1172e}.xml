@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{8dd07e0e-eb96-401a-868b-01f2afb1172e}">
+		<property name="assetPath">
+			<value>mixkit-air-woosh-1489.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.3206575963718823</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{debafcc8-0127-4c4b-ba93-af10d07992ee}</destination>
+		</relationship>
+	</object>
+</objects>
