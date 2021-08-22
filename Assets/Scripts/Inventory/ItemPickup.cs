@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using CodeMonkey.Utils;
+using FMODUnity;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Tilemaps;
 
@@ -138,6 +139,8 @@ public class ItemPickup : MonoBehaviour
 
     public void DestroySelf()
     {
+        RuntimeManager.PlayOneShot(AudioManager.Instance.pickupEvent, transform.position);
+        
         Destroy(gameObject);
     }
 }

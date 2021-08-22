@@ -274,7 +274,7 @@ MonoBehaviour:
   sourceProjectPath: C:/Users/japsu/Documents/FMOD Studio/Admortem_FMOD/Admortem_FMOD.fspro
   sourceBankPath: C:/Users/japsu/Documents/FMOD Studio/Admortem_FMOD/Build
   SourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 0
   BankLoadType: 0
@@ -295,7 +295,10 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - Environment
+  - Music
+  - Player
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

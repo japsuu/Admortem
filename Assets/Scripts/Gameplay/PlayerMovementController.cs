@@ -1,64 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
+using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
+using Gizmos = Popcron.Gizmos;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovementController : MonoBehaviour
 {
     public static PlayerMovementController Instance;
 
-    public StudioEventEmitter hurtEmitter;
-
     [SerializeField] public Animator animator;
     [SerializeField] public SpriteRenderer spriteRenderer;
     [SerializeField] public ParticleSystem fallParticleSystem;
     [SerializeField] public ParticleSystem runParticleSystem;
 
-    [SerializeField] float movementSpeed = 5f;
-    [SerializeField] int defaultAdditionalJumps = 0;
-    [SerializeField] float jumpForce = 5f;
-    [SerializeField] float fallMultiplier = 2.5f;
-    [SerializeField] float lowJumpMultiplier = 2f;
+    [SerializeField] private float movementSpeed = 8f;
+    [SerializeField] private int defaultAdditionalJumps;
+    [SerializeField] private float jumpForce = 11.5f;
+    [SerializeField] private float fallMultiplier = 1.5f;
+    [SerializeField] private float lowJumpMultiplier = 2f;
 
-    [SerializeField] LayerMask groundLayer;
-    [SerializeField] Transform groundCheck;
-    [SerializeField] float groundCheckVerticalDistance = 0.5f;
-    [SerializeField] float groundCheckHorizontalDistance = 0.25f;
-    [SerializeField] float groundedDelay = 0.1f;
-
-    [Space]
-
-    [HideInInspector] public bool facingLeft = false;
-
-    [Space] [ReadOnly] public bool flyModeEnabled = false;
-    [Space] [ReadOnly] public bool godModeEnabled = false;
-
-    [ReadOnly] [SerializeField] private float stunnedTimeLeft = 0;
-    [ReadOnly] [SerializeField] private float fallHeight = 0;
-    [ReadOnly] [SerializeField] private bool stunned = false;
-    [ReadOnly] [SerializeField] private bool canChangeAnimation = true;
-
-    [ReadOnly] [SerializeField] private bool isGrounded = false;
-    [ReadOnly] [SerializeField] private float lastGrounded = 0;
-    [ReadOnly] [SerializeField] private int additionalJumpsLeft = 0;
-
-    private Rigidbody2D rb = null;
-    private ParticleSystem.MainModule particleSystemMainMod;
-
-    private float lastYPos = 0;
-    private float xAxis = 0;
-    private float lastFrameXaxis = 0;
-    private float animationStunTime = 0;
-
-    private string currentAnimatorState;
-
-    private Vector2 groundCheck1Origin;
-    private Vector2 groundCheck1Destination;
-    private Vector2 groundCheck2Origin;
-    private Vector2 groundCheck2Destination;
-
-
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckVerticalDistance = 0.1f;
+    [SerializeField] private float groundCheckHorizontalDistance = 0.256f;
+    [SerializeField] private float groundedDelay = 0.1f;
 
     [SerializeField] private AnimationClip idleAnim;
     [SerializeField] private AnimationClip idleTransitionAnim;
@@ -67,6 +33,57 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private AnimationClip jumpMidAnim;
     [SerializeField] private AnimationClip jumpFallAnim;
     [SerializeField] private AnimationClip landAnim;
+
+    [EventRef]
+    [SerializeField] private string hurtEvent;
+    
+    [EventRef]
+    [SerializeField] private string jumpEvent;
+
+    [EventRef]
+    [SerializeField] private string landEvent;
+
+    [EventRef]
+    [SerializeField] private string fallingEvent;
+    
+    [ParamRef]
+    [SerializeField] private string fallSpeedParameter;
+
+    [Space]
+
+    [HideInInspector] public bool facingLeft;
+
+    [ReadOnly] [Space] public bool flyModeEnabled;
+    [ReadOnly] [Space] public bool godModeEnabled;
+
+    [ReadOnly] [SerializeField] private float stunnedTimeLeft;
+    [ReadOnly] [SerializeField] private float fallHeight;
+    [ReadOnly] [SerializeField] private bool stunned;
+    [ReadOnly] [SerializeField] private bool canChangeAnimation = true;
+
+    [ReadOnly] [SerializeField] private bool isGrounded;
+    [ReadOnly] [SerializeField] private float lastGrounded;
+    [ReadOnly] [SerializeField] private int additionalJumpsLeft;
+
+    private Rigidbody2D rb;
+    private ParticleSystem.MainModule particleSystemMainMod;
+
+    private float lastYPos;
+    private float xAxis;
+    private float lastFrameXAxis;
+    private float animationStunTime;
+
+    private string currentAnimatorState;
+
+    private Vector2 groundCheck1Origin;
+    private Vector2 groundCheck1Destination;
+    private Vector2 groundCheck2Origin;
+    private Vector2 groundCheck2Destination;
+    
+    private PARAMETER_ID landParamsId;
+    private EventInstance fallingInstance;
+
+
     private static readonly int FallStunTime = Animator.StringToHash("FallStunTime");
 
     private void Awake()
@@ -77,6 +94,14 @@ public class PlayerMovementController : MonoBehaviour
             Instance = this;
 
         particleSystemMainMod = fallParticleSystem.main;
+        fallingInstance = RuntimeManager.CreateInstance(fallingEvent);
+    }
+
+    private void Start()
+    {
+        EventDescription eventDescription = RuntimeManager.GetEventDescription(landEvent);
+        eventDescription.getParameterDescriptionByName("SfxStrength", out var parameterDescription);
+        landParamsId = parameterDescription.id;
     }
 
     private void Update()
@@ -85,6 +110,12 @@ public class PlayerMovementController : MonoBehaviour
         CheckJumping();
 
         ApplyAnimations();
+
+        if (!(transform.position.y < -500)) return;
+        
+        transform.position = new Vector3(0, 100, 0);
+        fallHeight = 0;
+        Debug.LogWarning("Player fell from the map!");
     }
 
     private void FixedUpdate()
@@ -111,10 +142,10 @@ public class PlayerMovementController : MonoBehaviour
                 if (runParticleSystem.isPlaying)
                     runParticleSystem.Stop();
 
-                if (lastFrameXaxis != 0)
+                if (lastFrameXAxis != 0)
                 {
                     ChangeAnimationState(idleTransitionAnim, true);
-                    lastFrameXaxis = 0;
+                    lastFrameXAxis = 0;
                 }
 
                 if(
@@ -132,7 +163,7 @@ public class PlayerMovementController : MonoBehaviour
                     stunned = true;
                     animationStunTime = (1f / 6f) / stunnedTimeLeft;
                     
-                    hurtEmitter.Play();
+                    FMODUnity.RuntimeManager.PlayOneShot(hurtEvent, transform.position);
                 }
 
                 particleSystemMainMod.startSizeMultiplier = 1f;
@@ -161,7 +192,25 @@ public class PlayerMovementController : MonoBehaviour
                 particleSystemMainMod = fallParticleSystem.main;
                 particleSystemMainMod.startSizeMultiplier = 0.3f;
                 fallParticleSystem.Play();
+                
+                //FMODUnity.RuntimeManager.PlayOneShot(landEvent, transform.position);
+
+                EventInstance land = RuntimeManager.CreateInstance(landEvent);
+                
+                float sfxStrength = fallHeight / 10;
+
+                Mathf.Clamp(sfxStrength, 0, 1);
+                
+                land.setParameterByID(landParamsId, sfxStrength);
+                land.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+                land.start();
+                land.release();
             }
+            
+            fallingInstance.getPlaybackState(out PLAYBACK_STATE state);
+            
+            if(state == PLAYBACK_STATE.PLAYING)
+                fallingInstance.stop(STOP_MODE.ALLOWFADEOUT);
 
             fallHeight = 0;
         }
@@ -194,13 +243,20 @@ public class PlayerMovementController : MonoBehaviour
                         ChangeAnimationState(jumpRiseAnim, false);
                 }
             }
+            
+            RuntimeManager.StudioSystem.setParameterByName(fallSpeedParameter, Mathf.Abs(rb.velocity.y / 5));
+
+            fallingInstance.getPlaybackState(out PLAYBACK_STATE state);
+            
+            if(state == PLAYBACK_STATE.STOPPED)
+                fallingInstance.start();
         }
 
-        lastFrameXaxis = xAxis;
+        lastFrameXAxis = xAxis;
         lastYPos = transform.position.y;
     }
 
-    void CheckMovement()
+    private void CheckMovement()
     {
         //float horizontal = Input.GetAxis("Horizontal");
         xAxis = Input.GetAxisRaw("Horizontal");
@@ -218,9 +274,10 @@ public class PlayerMovementController : MonoBehaviour
 
     void CheckGrounded()
     {
-        groundCheck1Origin = new Vector2(groundCheck.position.x - groundCheckHorizontalDistance, groundCheck.position.y);
+        Vector3 position = groundCheck.position;
+        groundCheck1Origin = new Vector2(position.x - groundCheckHorizontalDistance, position.y);
         groundCheck1Destination = groundCheck1Origin - new Vector2(0, groundCheckVerticalDistance);
-        groundCheck2Origin = new Vector2(groundCheck.position.x + groundCheckHorizontalDistance, groundCheck.position.y);
+        groundCheck2Origin = new Vector2(position.x + groundCheckHorizontalDistance, position.y);
         groundCheck2Destination = groundCheck2Origin - new Vector2(0, groundCheckVerticalDistance);
 
         //TODO: If later having problems with checking ground, use the ground layer overload below?
@@ -242,7 +299,7 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    void CheckJumping()
+    private void CheckJumping()
     {
         if (
             Input.GetKeyDown(Settings.JumpKey)
@@ -253,6 +310,9 @@ public class PlayerMovementController : MonoBehaviour
             || Input.GetKey(Settings.JumpKey) && flyModeEnabled)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            
+            if(isGrounded)
+                RuntimeManager.PlayOneShot(jumpEvent, transform.position);
         }
 
         if (rb.velocity.y < 0)
@@ -267,7 +327,7 @@ public class PlayerMovementController : MonoBehaviour
         additionalJumpsLeft--;
     }
 
-    void ChangeAnimationState(AnimationClip newState, bool mustFinish, float customTime = -1f)
+    private void ChangeAnimationState(AnimationClip newState, bool mustFinish, float customTime = -1f)
     {
         if (currentAnimatorState == newState.name)
             return;
@@ -289,17 +349,14 @@ public class PlayerMovementController : MonoBehaviour
 
         if (mustFinish && canChangeAnimation)
         {
-            if(customTime != -1)
-                Invoke("OnAnimationFinished", customTime);
-            else
-                Invoke("OnAnimationFinished", newState.length);
+            Invoke(nameof(OnAnimationFinished), customTime != -1 ? customTime : newState.length);
         }
 
         if(canChangeAnimation)
             canChangeAnimation = !mustFinish;
     }
 
-    void Attack()
+    private void Attack()
     {
         // Perform attack by querying over the attack area
         RaycastHit2D[] hits = Physics2D.BoxCastAll(new Vector2(), new Vector2(), 0, new Vector2());
@@ -307,27 +364,21 @@ public class PlayerMovementController : MonoBehaviour
         foreach (RaycastHit2D hit in hits)
         {
             IDamageable damageable = hit.collider.GetComponent<IDamageable>();
-            if(damageable != null)
-            {
-                damageable.Damage(50);
-            }
+            damageable?.Damage(50);
         }
     }
 
-    void OnAnimationFinished()
+    private void OnAnimationFinished()
     {
         canChangeAnimation = true;
     }
 
     private void OnDrawGizmos()
     {
-        if (groundCheck != null)
-        {
-            Gizmos.color = GetColorByBool(isGrounded);
+        if (groundCheck == null) return;
 
-            Gizmos.DrawLine(groundCheck1Origin, groundCheck1Destination);
-            Gizmos.DrawLine(groundCheck2Origin, groundCheck2Destination);
-        }
+        Gizmos.Line(groundCheck1Origin, groundCheck1Destination, GetColorByBool(isGrounded));
+        Gizmos.Line(groundCheck2Origin, groundCheck2Destination, GetColorByBool(isGrounded));
 
         //if(wallsCheck != null)
         //{
@@ -341,11 +392,8 @@ public class PlayerMovementController : MonoBehaviour
         //}
     }
 
-    Color GetColorByBool(bool flag)
+    private static Color GetColorByBool(bool flag)
     {
-        if (flag)
-            return Color.green;
-        else
-            return Color.red;
+        return flag ? Color.green : Color.red;
     }
 }

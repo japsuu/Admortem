@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_03caaf8d7a7745e694a4251c0c9f306b:
+        m_Texture: {fileID: 2800000, guid: c370307a3fa4e2b43bf645eab28725cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_BADD5F9F:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -28,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c370307a3fa4e2b43bf645eab28725cc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -53,12 +57,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - CORNERS: 0
+    - Vector1_33818C7B: 0.1
+    - Vector1_8E6DB8B: 0
     - Vector1_A2CEEF4B: 1
     - Vector1_eefb23b2904c47028f812305a246500f: 1
+    - _Cutoff: 0.5
     - _EnableExternalAlpha: 0
     - _OutlineThickness: 1
     m_Colors:
     - Color_b899a4f92f34447bb5422ffbc8f57fa6: {r: 0, g: 0.8008378, b: 1, a: 0}
+    - Color_e3f0789be04c425196caec7495925d6f: {r: 1, g: 0, b: 0, a: 0}
     - Vector2_950F9506: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

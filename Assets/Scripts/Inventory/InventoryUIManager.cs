@@ -87,6 +87,8 @@ public class InventoryUIManager : MonoBehaviour
         }
 
         emptyInventorySlots.Sort();
+
+        SetCurrentlySelectedItem(null);
     }
 
     void RefreshInventoryItems()

@@ -35,7 +35,7 @@ public class AbstractItem
         return false;
     }
 
-    public virtual AbstractItem CreateDuplicate(int amount = -1)
+    public virtual AbstractItem CreateDuplicate(bool fullDurability = false, int amount = -1)
     {
         Debug.Log("Tried to duplicate item with no overridden duplicate behaviour!");
 

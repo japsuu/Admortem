@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -16,30 +17,163 @@ public class WorldManager : MonoBehaviour
     public Tilemap foregroundTilemap;
     public Tilemap backgroundTilemap;
 
-    //public Transform gridRoot;
+    private BlockBundle[,] world;
+    private int halfWorldWidth;
+    private int halfWorldHeight;
+    
+    private ChunkIt chunkIt;
 
-    private void Awake()    //TODO: Only colliders to separate tilemap?
+    public enum DamageResult
+    {
+        NotDamaged,
+        Damaged,
+        Destroyed
+    }
+
+    private void Awake()
     {
         if (Instance == null)
             Instance = this;
+        
+        chunkIt = foregroundTilemap.GetComponent<ChunkIt>();
     }
 
-    public void CreateWorld(BlockBundle[,] world)
+    public void CreateWorld(BlockBundle[,] worldBundle)
     {
+        world = worldBundle;
+        
         //World.Initialize(GetColliderChunks(world), foregroundTilemap, backgroundTilemap);
-        int halfWorldWidth = TerrainGenerator.Instance.worldWidth / 2;
-        int halfWorldHeight = TerrainGenerator.Instance.worldHeight / 2;
+        halfWorldWidth = TerrainGenerator.Instance.worldWidth / 2;
+        halfWorldHeight = TerrainGenerator.Instance.worldHeight / 2;
 
-        for (int x = 0; x < world.GetLength(0); x++)
+        for (int x = 0; x < worldBundle.GetLength(0); x++)
         {
-            for (int y = 0; y < world.GetLength(1); y++)
+            for (int y = 0; y < worldBundle.GetLength(1); y++)
             {
-                if (world[x, y] == null) continue;
+                if (worldBundle[x, y] == null) continue;
                 
-                foregroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), world[x, y].GetForegroundTile());
-                backgroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), world[x, y].GetBackgroundTile());
+                foregroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), worldBundle[x, y].GetForegroundTile());
+                backgroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), worldBundle[x, y].GetBackgroundTile());
             }
         }
+    }
+
+    public void PlaceBlockAt(Vector3Int tilePos, Tilemap selectedTilemap, Block newBlock)
+    {
+        if(selectedTilemap == foregroundTilemap)
+            PlaceForegroundBlockAt(tilePos, newBlock);
+        else
+            PlaceBackgroundBlockAt(tilePos, newBlock);
+
+        InventoryUIManager.Instance.Inventory.RemoveItem(newBlock);
+    }
+
+    /// <summary>
+    /// Damages a block at position.
+    /// </summary>
+    /// <param name="tilePos">Position to damage the tile at</param>
+    /// <param name="selectedTilemap"></param>
+    /// <param name="damageAmount">Amount to damage</param>
+    /// <returns>True if the block was damaged, false otherwise.</returns>
+    public DamageResult DamageBlockAt(Vector3Int tilePos, Tilemap selectedTilemap, int damageAmount)
+    {
+        TileBase clickedTile = selectedTilemap.GetTile(tilePos);
+
+        if (clickedTile == null)
+        {
+            return DamageResult.NotDamaged;
+        }
+        
+        if (selectedTilemap == foregroundTilemap)
+        {
+            Block block = GetBlockBundleAt(tilePos).GetForegroundBlock();
+
+            block.Durability -= damageAmount;
+        
+            RuntimeManager.PlayOneShot(block.GetMinedEvent(), transform.position);
+
+            if (block.Durability > 0) return DamageResult.Damaged;
+            
+            DestroyForegroundBlockAt(tilePos);
+            return DamageResult.Destroyed;
+        }
+        else
+        {
+            Block block = GetBlockBundleAt(tilePos).GetBackgroundBlock();
+
+            block.Durability -= damageAmount;
+        
+            RuntimeManager.PlayOneShot(block.GetMinedEvent(), transform.position);
+
+            if (block.Durability > 0) return DamageResult.Damaged;
+            
+            DestroyBackgroundBlockAt(tilePos);
+            return DamageResult.Destroyed;
+        }
+    }
+
+    /// <summary>
+    /// Destroys the block at FOREGROUND tilePos, and spawns a pickup there.
+    /// </summary>
+    /// <param name="tilePos"></param>
+    private void DestroyForegroundBlockAt(Vector3Int tilePos)
+    {
+        Vector3 tileWorldPos = foregroundTilemap.GetCellCenterWorld(tilePos);
+
+        Block block = world[tilePos.x + halfWorldWidth, tilePos.y + halfWorldHeight].GetForegroundBlock();
+        
+        ItemPickup.SpawnItemPickup(block, new Vector2(tileWorldPos.x, tileWorldPos.y + 0.1f), Quaternion.identity);
+        
+        RuntimeManager.PlayOneShot(block.GetBrokenEvent(), transform.position);
+        
+        world[tilePos.x + halfWorldWidth, tilePos.y + halfWorldHeight].SetForegroundBlock(null);
+        chunkIt.SetTile(tilePos, null);
+    }
+
+    /// <summary>
+    /// Destroys the block at BACKGROUND tilePos, and spawns a pickup there.
+    /// </summary>
+    private void DestroyBackgroundBlockAt(Vector3Int tilePos)
+    {
+        Vector3 tileWorldPos = backgroundTilemap.GetCellCenterWorld(tilePos);
+        
+        Block block = world[tilePos.x + halfWorldWidth, tilePos.y + halfWorldHeight].GetBackgroundBlock();
+        
+        ItemPickup.SpawnItemPickup(block, new Vector2(tileWorldPos.x, tileWorldPos.y + 0.1f), Quaternion.identity);
+        
+        RuntimeManager.PlayOneShot(block.GetBrokenEvent(), transform.position);
+        
+        world[tilePos.x + halfWorldWidth, tilePos.y + halfWorldHeight].SetBackgroundBlock(null);
+        backgroundTilemap.SetTile(tilePos, null);
+    }
+
+    /// <summary>
+    /// Sets the block at FOREGROUND tilePos.
+    /// </summary>
+    /// <param name="tilePos"></param>
+    /// <param name="newBlock"></param>
+    private void PlaceForegroundBlockAt(Vector3Int tilePos, Block newBlock)
+    {
+        world[tilePos.x + halfWorldWidth, tilePos.y + halfWorldHeight].SetForegroundBlock(newBlock);
+        chunkIt.SetTile(tilePos, newBlock.Tile);
+        
+        RuntimeManager.PlayOneShot(newBlock.GetPlacedEvent(), transform.position);
+    }
+
+    /// <summary>
+    /// Sets the block at BACKGROUND tilePos.
+    /// </summary>
+    private void PlaceBackgroundBlockAt(Vector3Int tilePos, Block newBlock)
+    {
+        world[tilePos.x + halfWorldWidth, tilePos.y + halfWorldHeight].SetBackgroundBlock(newBlock);
+        backgroundTilemap.SetTile(tilePos, newBlock.Tile);
+        
+        RuntimeManager.PlayOneShot(newBlock.GetPlacedEvent(), transform.position);
+    }
+
+    public BlockBundle GetBlockBundleAt(Vector3Int tilePos)
+    {
+        return world[tilePos.x + halfWorldWidth, tilePos.y + halfWorldHeight];
     }
     
     
@@ -119,56 +253,6 @@ public static class World
     }
 }*/
 
-/// <summary>
-/// Represents a cell in the tilemap's grid. Contains a foreground as well as a background block.
-/// </summary>
-public class BlockBundle
-{
-    private Block foreground;
-    private Block background;
-    
-    public BlockBundle(Block foreground, Block background)
-    {
-        this.foreground = foreground;
-        this.background = background;
-    }
-
-    public Block GetForegroundBlock()
-    {
-        return foreground;
-    }
-
-    public Block GetBackgroundBlock()
-    {
-        return background;
-    }
-
-    public TileBase GetForegroundTile()
-    {
-        if (GetForegroundBlock() == null)
-            return null;
-        
-        return GetForegroundBlock().Tile != null ? GetForegroundBlock().Tile : null;
-    }
-
-    public TileBase GetBackgroundTile()
-    {
-        if (GetBackgroundBlock() == null)
-            return null;
-
-        return GetBackgroundBlock().Tile != null ? GetBackgroundBlock().Tile : null;
-    }
-
-    public void SetForegroundBlock(Block newBlock)
-    {
-        foreground = newBlock;
-    }
-
-    public void SetBackgroundBlock(Block newBlock)
-    {
-        background = newBlock;
-    }
-}
 /*
 /// <summary>
 /// Represents a 'colliderChunkWidth'-wide "column" of the map colliders, from the bottom of the world to the sky limit.

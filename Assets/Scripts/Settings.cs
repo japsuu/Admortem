@@ -19,4 +19,7 @@ public class Settings : ScriptableObject
     public static KeyCode CameraZoomInKey = KeyCode.KeypadPlus;
     public static KeyCode CameraZoomOutKey = KeyCode.KeypadMinus;
     public static KeyCode CameraZoomResetKey = KeyCode.KeypadMultiply;
+    
+    // Debug
+    public static bool DebugVisualsEnabled = false;
 }
