@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d8f86dda-f6cd-4ebf-bb08-0f8882bc47b8}">
+		<property name="assetPath">
+			<value>sfx/Noise/189251__quartzgate__gwppbbg.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>16.061583333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{debafcc8-0127-4c4b-ba93-af10d07992ee}</destination>
+		</relationship>
+	</object>
+</objects>

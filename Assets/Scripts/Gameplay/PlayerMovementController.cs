@@ -72,6 +72,7 @@ public class PlayerMovementController : MonoBehaviour
     private float xAxis;
     private float lastFrameXAxis;
     private float animationStunTime;
+    private float lastFrameVelocity;
 
     private string currentAnimatorState;
 
@@ -110,6 +111,8 @@ public class PlayerMovementController : MonoBehaviour
         CheckJumping();
 
         ApplyAnimations();
+        
+        lastFrameVelocity = Mathf.Abs(rb.velocity.y);
 
         if (!(transform.position.y < -500)) return;
         
@@ -244,6 +247,7 @@ public class PlayerMovementController : MonoBehaviour
                 }
             }
             
+            //RuntimeManager.StudioSystem.setParameterByName(fallSpeedParameter,  Mathf.Lerp(Mathf.Abs(rb.velocity.y / 5), lastFrameVelocity, Time.deltaTime));
             RuntimeManager.StudioSystem.setParameterByName(fallSpeedParameter, Mathf.Abs(rb.velocity.y / 5));
 
             fallingInstance.getPlaybackState(out PLAYBACK_STATE state);
