@@ -1,4 +1,3 @@
-using System;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -73,6 +72,8 @@ public class BuildingController : MonoBehaviour
 
     private void Update()
     {
+        if(!GameController.PlayerSpawned) return;
+        
         breakCooldownLeft -= Time.deltaTime;
         
         // Make sure we cannot place any block that's amount is zero or negative
@@ -142,32 +143,29 @@ public class BuildingController : MonoBehaviour
         // Breaking blocks
         if (!Input.GetMouseButton(1) || InventoryUIManager.IsPointerOverUIElement()) return;
         {
-            if (breakCooldownLeft < 0)
+            if (!(breakCooldownLeft < 0)) return;
+            
+            switch (WorldManager.Instance.DamageBlockAt(tilePos, GetSelectedTilemap(), blockDamageAmount))
             {
-                switch (WorldManager.Instance.DamageBlockAt(tilePos, GetSelectedTilemap(), blockDamageAmount))
+                case WorldManager.DamageResult.NotDamaged:
                 {
-                    case WorldManager.DamageResult.NotDamaged:
-                    {
-                        //TODO: Somehow tell the player that that block cannot be damaged. Maybe SFX?
-                    }
-                        break;
-                    case WorldManager.DamageResult.Damaged:
-                    {
-                        // Handle the shatter overlay:
-                        shatterOverlayMap.SetTile(tilePos, GetShatterTile(tilePos));
-                    }
-                        break;
-                    case WorldManager.DamageResult.Destroyed:
-                    {
-                        shatterOverlayMap.SetTile(tilePos, null);
-                    }
-                        break;
-                    default:
-                        break;
+                    //TODO: Somehow tell the player that that block cannot be damaged. Maybe SFX?
                 }
-
-                breakCooldownLeft = 1 / (float)breakSpeed;
+                    break;
+                case WorldManager.DamageResult.Damaged:
+                {
+                    // Handle the shatter overlay:
+                    shatterOverlayMap.SetTile(tilePos, GetShatterTile(tilePos));
+                }
+                    break;
+                case WorldManager.DamageResult.Destroyed:
+                {
+                    shatterOverlayMap.SetTile(tilePos, null);
+                }
+                    break;
             }
+
+            breakCooldownLeft = 1 / (float)breakSpeed;
         }
     }
 

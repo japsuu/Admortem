@@ -89,7 +89,6 @@ public class TerrainGenerator : MonoBehaviour
 
         // Assign the 2D world array to the tilemap
         WorldManager.Instance.CreateWorld(world);
-        //TODO: Splice the generated map in to sections for each chunk.
     }
 
     void GenerateBelowSurface()
@@ -206,7 +205,7 @@ public class TerrainGenerator : MonoBehaviour
     // We do this to get around the unity OnValidate warnings.
 #if UNITY_EDITOR
 
-    void OnValidate() { UnityEditor.EditorApplication.delayCall += _OnValidate; }
+    private void OnValidate() { UnityEditor.EditorApplication.delayCall += _OnValidate; }
     private void _OnValidate()
     {
         if (this == null) return;
@@ -218,12 +217,11 @@ public class TerrainGenerator : MonoBehaviour
         if (astar == null)
             return;
 
-        if(astar.graphs.Length > 0)
-        {
-            GridGraph graph = (GridGraph)astar.graphs[0];
-            graph.SetDimensions(worldWidth * 2, worldHeight * 2, 0.5f);
-            astar.Scan();
-        }
+        if (astar.graphs.Length <= 0) return;
+        
+        GridGraph graph = (GridGraph)astar.graphs[0];
+        graph.SetDimensions(worldWidth * 2, worldHeight * 2, 0.5f);
+        astar.Scan();
     }
 
 #endif
@@ -234,7 +232,7 @@ public class TerrainGenerator : MonoBehaviour
         Gizmos.DrawWireCube(new Vector3(0, -worldHeight / 2 + cavesLevel, 0), new Vector3(worldWidth, cavesVerticalSize, 1));
     }
 
-    void GenerateTerrainSurfaceNoiseMap()
+    private void GenerateTerrainSurfaceNoiseMap()
     {
         float[] map = new float[worldWidth];
 
@@ -248,7 +246,7 @@ public class TerrainGenerator : MonoBehaviour
         terrainSurfaceNoiseMap = map;
     }
 
-    float[,] GetNoiseMap(bool ignoreAmplitude)
+    private float[,] GetNoiseMap(bool ignoreAmplitude)
     {
         float[,] map = new float[worldWidth, worldHeight];
 

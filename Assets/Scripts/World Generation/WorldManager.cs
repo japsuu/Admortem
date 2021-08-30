@@ -20,6 +20,8 @@ public class WorldManager : MonoBehaviour
     private BlockBundle[,] world;
     private int halfWorldWidth;
     private int halfWorldHeight;
+
+    private bool spawnPointSet;
     
     private ChunkIt chunkIt;
 
@@ -40,6 +42,11 @@ public class WorldManager : MonoBehaviour
 
     public void CreateWorld(BlockBundle[,] worldBundle)
     {
+        StartCoroutine(GenerateWorld(worldBundle));
+    }
+
+    private IEnumerator GenerateWorld(BlockBundle[,] worldBundle)
+    {
         world = worldBundle;
         
         //World.Initialize(GetColliderChunks(world), foregroundTilemap, backgroundTilemap);
@@ -48,14 +55,34 @@ public class WorldManager : MonoBehaviour
 
         for (int x = 0; x < worldBundle.GetLength(0); x++)
         {
-            for (int y = 0; y < worldBundle.GetLength(1); y++)
+            for (int y = worldBundle.GetLength(1) - 1; y >= 0; y--)
             {
                 if (worldBundle[x, y] == null) continue;
+
+                Debug.Log("Cell pos: " + new Vector2(x, y));
+                // Set the player SpawnPoint
+                //if (!spawnPointSet && x == halfWorldWidth)
+                //{
+                //    Debug.Log("Cell pos: " + new Vector3Int(x, y, 0));
+                //    GameController.PlayerSpawnPos = foregroundTilemap.LocalToWorld(new Vector2(0, y / 2));
+                //    spawnPointSet = true;
+                //    
+                //    Debug.Log("Spawn pos: " + GameController.PlayerSpawnPos);
+                //}
                 
                 foregroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), worldBundle[x, y].GetForegroundTile());
                 backgroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), worldBundle[x, y].GetBackgroundTile());
             }
+            
+            if(x % 4 == 0)
+                yield return null;
         }
+        
+        chunkIt.GenerateColliders();
+        
+        GameController.Instance.SpawnPlayer();
+
+        yield return null;
     }
 
     public void PlaceBlockAt(Vector3Int tilePos, Tilemap selectedTilemap, Block newBlock)

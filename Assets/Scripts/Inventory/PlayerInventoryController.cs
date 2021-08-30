@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInventoryController : MonoBehaviour
 {
     public static PlayerInventoryController Instance;
 
-    public InventoryUIManager inventoryUI;
+    private InventoryUIManager inventoryUI;
     Inventory inventory;
     public GameObject testPickupPrefab;
 
@@ -14,6 +12,8 @@ public class PlayerInventoryController : MonoBehaviour
     {
         if (Instance == null)
             Instance = this;
+
+        inventoryUI = FindObjectOfType<InventoryUIManager>();
     }
 
     private void Start()
@@ -24,12 +24,11 @@ public class PlayerInventoryController : MonoBehaviour
 
     public void PickUpItem(ItemPickup pickup)
     {
-        if (pickup != null)
+        if (pickup == null) return;
+        
+        if (inventory.AddItem(pickup.GetItem()))
         {
-            if (inventory.AddItem(pickup.GetItem()))
-            {
-                pickup.DestroySelf();
-            }
+            pickup.DestroySelf();
         }
     }
 

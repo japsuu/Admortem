@@ -20,6 +20,8 @@ public class ChunkIt : MonoBehaviour
 {
     [SerializeField] private bool useSingleton = false;
     public static ChunkIt Instance;
+
+    public bool generateCollidersOnStart;
     
     [Tooltip("Determines how wide chunks the collider shape gets broken in to." +
              "Larger value means more time to build the bigger collider.")]
@@ -195,6 +197,19 @@ public class ChunkIt : MonoBehaviour
     }
 
     private void Start()
+    {
+        if(!generateCollidersOnStart) return;
+        
+        List<Vector3Int> tilePositions = GetAllPositions();
+        
+        // Initialize the collision tilemap with all the tiles in the visual tilemap.
+        foreach (Vector3Int pos in tilePositions)
+        {
+            SetColliderTile(pos, dummyTile, false);
+        }
+    }
+
+    public void GenerateColliders()
     {
         List<Vector3Int> tilePositions = GetAllPositions();
         
