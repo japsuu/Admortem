@@ -1,148 +1,154 @@
 fileFormatVersion: 2
-guid: 2b0cdae55ccf528468a36f7f50570002
+guid: ab98b3fe97e420c4c8bb030f673aac6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6731443371575309277
-    second: log_palette_0
+      213: -7612863238910546540
+    second: tree_leaves_palette_0
   - first:
-      213: -4528350358000304515
-    second: log_palette_1
+      213: -4280135133876916259
+    second: tree_leaves_palette_1
   - first:
-      213: -1734291618686916592
-    second: log_palette_2
+      213: -4802609750739688116
+    second: tree_leaves_palette_2
   - first:
-      213: -3531611453043925996
-    second: log_palette_3
+      213: 7379199330853568543
+    second: tree_leaves_palette_3
   - first:
-      213: -6764031878442238326
-    second: log_palette_4
+      213: -484243871876484622
+    second: tree_leaves_palette_4
   - first:
-      213: 3369502388623927869
-    second: log_palette_5
+      213: -950575570280941285
+    second: tree_leaves_palette_5
   - first:
-      213: -5508064375305269096
-    second: log_palette_6
+      213: 723619864192195542
+    second: tree_leaves_palette_6
   - first:
-      213: 6351306744782142470
-    second: log_palette_7
+      213: 1673418119745975294
+    second: tree_leaves_palette_7
   - first:
-      213: -1879087075059959960
-    second: log_palette_8
+      213: -4152398851671138699
+    second: tree_leaves_palette_8
   - first:
-      213: 2318820862515000093
-    second: log_palette_9
+      213: 7770115287491379978
+    second: tree_leaves_palette_9
   - first:
-      213: -3958000907776940334
-    second: log_palette_10
+      213: 8785350649767210131
+    second: tree_leaves_palette_10
   - first:
-      213: -6421799144696428003
-    second: log_palette_11
+      213: 9048338275704316444
+    second: tree_leaves_palette_11
   - first:
-      213: -9127307848386795372
-    second: log_palette_12
+      213: 1626847024102678044
+    second: tree_leaves_palette_12
   - first:
-      213: 4851506253573082635
-    second: log_palette_13
+      213: 6458669126324051427
+    second: tree_leaves_palette_13
   - first:
-      213: -3181937577403163451
-    second: log_palette_14
+      213: 3533935236990469789
+    second: tree_leaves_palette_14
   - first:
-      213: 3215223479815991858
-    second: log_palette_15
+      213: -6183757541654642148
+    second: tree_leaves_palette_15
   - first:
-      213: 2139352285927265572
-    second: log_palette_16
+      213: 794719696585340532
+    second: tree_leaves_palette_16
   - first:
-      213: -5716989894372081684
-    second: log_palette_17
+      213: 5851455593805888792
+    second: tree_leaves_palette_17
   - first:
-      213: 7640831932945194677
-    second: log_palette_18
+      213: -2330481437150642957
+    second: tree_leaves_palette_18
   - first:
-      213: 9157804037987531713
-    second: log_palette_19
+      213: 5241922399217542997
+    second: tree_leaves_palette_19
   - first:
-      213: -1774414302587087853
-    second: log_palette_20
+      213: -4139871933710618099
+    second: tree_leaves_palette_20
   - first:
-      213: 3133524735426091782
-    second: log_palette_21
+      213: -1742124535672839117
+    second: tree_leaves_palette_21
   - first:
-      213: -109397439948035829
-    second: log_palette_22
+      213: -8570289278702720615
+    second: tree_leaves_palette_22
   - first:
-      213: 4119441373979626142
-    second: log_palette_23
+      213: 9016420993638162577
+    second: tree_leaves_palette_23
   - first:
-      213: 7336155885095300290
-    second: log_palette_24
+      213: -6516841305140824798
+    second: tree_leaves_palette_24
   - first:
-      213: -3891142186077831074
-    second: log_palette_25
+      213: 1449377513680096962
+    second: tree_leaves_palette_25
   - first:
-      213: -4852981966807913751
-    second: log_palette_26
+      213: 4483889687966187664
+    second: tree_leaves_palette_26
   - first:
-      213: 1013819634684600493
-    second: log_palette_27
+      213: -3165062300290073598
+    second: tree_leaves_palette_27
   - first:
-      213: 2437463676382462200
-    second: log_palette_28
+      213: 1936586295318613794
+    second: tree_leaves_palette_28
   - first:
-      213: 571565322340288625
-    second: log_palette_29
+      213: 6143427963164102300
+    second: tree_leaves_palette_29
   - first:
-      213: 6607981501866525902
-    second: log_palette_30
+      213: 1660127960074147384
+    second: tree_leaves_palette_30
   - first:
-      213: -8984055252295570093
-    second: log_palette_31
+      213: -869042908012339987
+    second: tree_leaves_palette_31
   - first:
-      213: -3391638396893323843
-    second: log_palette_32
+      213: -6741586703043034907
+    second: tree_leaves_palette_32
   - first:
-      213: 5330225111871830515
-    second: log_palette_33
+      213: 6984432075933410763
+    second: tree_leaves_palette_33
   - first:
-      213: 7549225291572281527
-    second: log_palette_34
+      213: -2335683338874444434
+    second: tree_leaves_palette_34
   - first:
-      213: -1379449017374400438
-    second: log_palette_35
+      213: -5986252254235341548
+    second: tree_leaves_palette_35
   - first:
-      213: 5723415932923754685
-    second: log_palette_36
+      213: 2934453973904175247
+    second: tree_leaves_palette_36
   - first:
-      213: 2505931512894049481
-    second: log_palette_37
+      213: 7140357404274185267
+    second: tree_leaves_palette_37
   - first:
-      213: 476561594223539146
-    second: log_palette_38
+      213: 676120493765521511
+    second: tree_leaves_palette_38
   - first:
-      213: 8619823438231096064
-    second: log_palette_39
+      213: -3339973810575599526
+    second: tree_leaves_palette_39
   - first:
-      213: 317127797340592106
-    second: log_palette_40
+      213: -2837621582852300089
+    second: tree_leaves_palette_40
   - first:
-      213: -3919078278537063282
-    second: log_palette_41
+      213: -551776116069484488
+    second: tree_leaves_palette_41
   - first:
-      213: -7321243880786637358
-    second: log_palette_42
+      213: 1921287899959813868
+    second: tree_leaves_palette_42
   - first:
-      213: 281111041559345484
-    second: log_palette_43
+      213: -305598999222113774
+    second: tree_leaves_palette_43
   - first:
-      213: 5089661888902465400
-    second: log_palette_44
+      213: 4499788574658828471
+    second: tree_leaves_palette_44
   - first:
-      213: 4951909772945087402
-    second: log_palette_45
+      213: -1928640300493582277
+    second: tree_leaves_palette_45
   - first:
-      213: 1590643584676472919
-    second: log_palette_46
+      213: 5891568784189208873
+    second: tree_leaves_palette_46
+  - first:
+      213: 1767141122347860508
+    second: tree_leaves_palette_47
+  - first:
+      213: -6478426749405126525
+    second: tree_leaves_palette_48
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -268,7 +274,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: log_palette_0
+      name: tree_leaves_palette_0
       rect:
         serializedVersion: 2
         x: 0
@@ -282,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c88931beb1592a0800000000000000
-      internalID: -6731443371575309277
+      spriteID: 49d6b19083da95690800000000000000
+      internalID: -7612863238910546540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_1
+      name: tree_leaves_palette_1
       rect:
         serializedVersion: 2
         x: 16
@@ -303,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7ef0e477511821c0800000000000000
-      internalID: -4528350358000304515
+      spriteID: ddfe89ad5c7e994c0800000000000000
+      internalID: -4280135133876916259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_2
+      name: tree_leaves_palette_2
       rect:
         serializedVersion: 2
         x: 32
@@ -324,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 018aa3326fe8ee7e0800000000000000
-      internalID: -1734291618686916592
+      spriteID: c45655480e3b95db0800000000000000
+      internalID: -4802609750739688116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_3
+      name: tree_leaves_palette_3
       rect:
         serializedVersion: 2
         x: 48
@@ -345,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41c9d9048123dfec0800000000000000
-      internalID: -3531611453043925996
+      spriteID: f10c35ad1be286660800000000000000
+      internalID: 7379199330853568543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_4
+      name: tree_leaves_palette_4
       rect:
         serializedVersion: 2
         x: 64
@@ -366,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8e380c08d45122a0800000000000000
-      internalID: -6764031878442238326
+      spriteID: 2f17420a3ce9749f0800000000000000
+      internalID: -484243871876484622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_5
+      name: tree_leaves_palette_5
       rect:
         serializedVersion: 2
         x: 80
@@ -387,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3a62cfe190e2ce20800000000000000
-      internalID: 3369502388623927869
+      spriteID: b197d312e80eec2f0800000000000000
+      internalID: -950575570280941285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_6
+      name: tree_leaves_palette_6
       rect:
         serializedVersion: 2
         x: 96
@@ -408,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89012f532ac6f83b0800000000000000
-      internalID: -5508064375305269096
+      spriteID: 6db979dbe60da0a00800000000000000
+      internalID: 723619864192195542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_7
+      name: tree_leaves_palette_7
       rect:
         serializedVersion: 2
         x: 0
@@ -429,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c384e65df542850800000000000000
-      internalID: 6351306744782142470
+      spriteID: ef3392ce9ec293710800000000000000
+      internalID: 1673418119745975294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_8
+      name: tree_leaves_palette_8
       rect:
         serializedVersion: 2
         x: 16
@@ -450,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 867f505d2442ce5e0800000000000000
-      internalID: -1879087075059959960
+      spriteID: 57ed668ae37bf56c0800000000000000
+      internalID: -4152398851671138699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_9
+      name: tree_leaves_palette_9
       rect:
         serializedVersion: 2
         x: 32
@@ -471,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d13b8ffe94b1e2020800000000000000
-      internalID: 2318820862515000093
+      spriteID: a0381c6afaef4db60800000000000000
+      internalID: 7770115287491379978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_10
+      name: tree_leaves_palette_10
       rect:
         serializedVersion: 2
         x: 48
@@ -492,14 +498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d6284f052b5219c0800000000000000
-      internalID: -3958000907776940334
+      spriteID: 39c2f928ed5dbe970800000000000000
+      internalID: 8785350649767210131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_11
+      name: tree_leaves_palette_11
       rect:
         serializedVersion: 2
         x: 64
@@ -513,14 +519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a4679b3bf21e6a0800000000000000
-      internalID: -6421799144696428003
+      spriteID: c122deab8b7229d70800000000000000
+      internalID: 9048338275704316444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_12
+      name: tree_leaves_palette_12
       rect:
         serializedVersion: 2
         x: 80
@@ -534,14 +540,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4982545ded9455180800000000000000
-      internalID: -9127307848386795372
+      spriteID: c1e9a8fbfb8b39610800000000000000
+      internalID: 1626847024102678044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_13
+      name: tree_leaves_palette_13
       rect:
         serializedVersion: 2
         x: 96
@@ -555,14 +561,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0e4fc5bb33045340800000000000000
-      internalID: 4851506253573082635
+      spriteID: 3edd354d95dc1a950800000000000000
+      internalID: 6458669126324051427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_14
+      name: tree_leaves_palette_14
       rect:
         serializedVersion: 2
         x: 0
@@ -576,14 +582,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ccda69c1ac77d3d0800000000000000
-      internalID: -3181937577403163451
+      spriteID: d968d0cdf5f0b0130800000000000000
+      internalID: 3533935236990469789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_15
+      name: tree_leaves_palette_15
       rect:
         serializedVersion: 2
         x: 16
@@ -597,14 +603,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2327deb48b4ce9c20800000000000000
-      internalID: 3215223479815991858
+      spriteID: c1248806741ee2aa0800000000000000
+      internalID: -6183757541654642148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_16
+      name: tree_leaves_palette_16
       rect:
         serializedVersion: 2
         x: 32
@@ -618,14 +624,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4255d1cb19180bd10800000000000000
-      internalID: 2139352285927265572
+      spriteID: 476b9fa7a59670b00800000000000000
+      internalID: 794719696585340532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_17
+      name: tree_leaves_palette_17
       rect:
         serializedVersion: 2
         x: 48
@@ -639,14 +645,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cef34712bfb29a0b0800000000000000
-      internalID: -5716989894372081684
+      spriteID: 81db5c73cdb843150800000000000000
+      internalID: 5851455593805888792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_18
+      name: tree_leaves_palette_18
       rect:
         serializedVersion: 2
         x: 64
@@ -660,14 +666,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bed8aff820b90a60800000000000000
-      internalID: 7640831932945194677
+      spriteID: 3fc7ef6fa7778afd0800000000000000
+      internalID: -2330481437150642957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_19
+      name: tree_leaves_palette_19
       rect:
         serializedVersion: 2
         x: 80
@@ -681,14 +687,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cb72ee904e071f70800000000000000
-      internalID: 9157804037987531713
+      spriteID: 557668136ac0fb840800000000000000
+      internalID: 5241922399217542997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_20
+      name: tree_leaves_palette_20
       rect:
         serializedVersion: 2
         x: 96
@@ -702,14 +708,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3149ce1d7930067e0800000000000000
-      internalID: -1774414302587087853
+      spriteID: d02b19709683c86c0800000000000000
+      internalID: -4139871933710618099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_21
+      name: tree_leaves_palette_21
       rect:
         serializedVersion: 2
         x: 0
@@ -723,14 +729,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60bd8fd05248c7b20800000000000000
-      internalID: 3133524735426091782
+      spriteID: 3346ab807fab2d7e0800000000000000
+      internalID: -1742124535672839117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_22
+      name: tree_leaves_palette_22
       rect:
         serializedVersion: 2
         x: 16
@@ -744,14 +750,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b096f84ab975b7ef0800000000000000
-      internalID: -109397439948035829
+      spriteID: 999e590fe47301980800000000000000
+      internalID: -8570289278702720615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_23
+      name: tree_leaves_palette_23
       rect:
         serializedVersion: 2
         x: 32
@@ -765,14 +771,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9a4a199a123b2930800000000000000
-      internalID: 4119441373979626142
+      spriteID: 1906d276f13c02d70800000000000000
+      internalID: 9016420993638162577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_24
+      name: tree_leaves_palette_24
       rect:
         serializedVersion: 2
         x: 48
@@ -786,14 +792,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cc2ffba8e24fc560800000000000000
-      internalID: 7336155885095300290
+      spriteID: 225fc755c578f85a0800000000000000
+      internalID: -6516841305140824798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_25
+      name: tree_leaves_palette_25
       rect:
         serializedVersion: 2
         x: 64
@@ -807,14 +813,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e504b444cc2eff9c0800000000000000
-      internalID: -3891142186077831074
+      spriteID: 2ce47586b293d1410800000000000000
+      internalID: 1449377513680096962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_26
+      name: tree_leaves_palette_26
       rect:
         serializedVersion: 2
         x: 80
@@ -828,14 +834,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eaa9070d9eb6acb0800000000000000
-      internalID: -4852981966807913751
+      spriteID: 090034f1ae9f93e30800000000000000
+      internalID: 4483889687966187664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_27
+      name: tree_leaves_palette_27
       rect:
         serializedVersion: 2
         x: 96
@@ -849,14 +855,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da021b7169fc11e00800000000000000
-      internalID: 1013819634684600493
+      spriteID: 20cba3b6b907314d0800000000000000
+      internalID: -3165062300290073598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_28
+      name: tree_leaves_palette_28
       rect:
         serializedVersion: 2
         x: 0
@@ -870,14 +876,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f0c1b7ac4c93d120800000000000000
-      internalID: 2437463676382462200
+      spriteID: 22f0b51a9f220ea10800000000000000
+      internalID: 1936586295318613794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_29
+      name: tree_leaves_palette_29
       rect:
         serializedVersion: 2
         x: 16
@@ -891,14 +897,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1784604e1ab9ee700800000000000000
-      internalID: 571565322340288625
+      spriteID: c9e0997ee27d14550800000000000000
+      internalID: 6143427963164102300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_30
+      name: tree_leaves_palette_30
       rect:
         serializedVersion: 2
         x: 32
@@ -912,14 +918,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec44b155a2444bb50800000000000000
-      internalID: 6607981501866525902
+      spriteID: 836d9ed7595f90710800000000000000
+      internalID: 1660127960074147384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_31
+      name: tree_leaves_palette_31
       rect:
         serializedVersion: 2
         x: 48
@@ -933,14 +939,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35da07cf859325380800000000000000
-      internalID: -8984055252295570093
+      spriteID: dec1a5d541a80f3f0800000000000000
+      internalID: -869042908012339987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_32
+      name: tree_leaves_palette_32
       rect:
         serializedVersion: 2
         x: 64
@@ -954,14 +960,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd199209da7ee0d0800000000000000
-      internalID: -3391638396893323843
+      spriteID: 5e08f9eac921172a0800000000000000
+      internalID: -6741586703043034907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_33
+      name: tree_leaves_palette_33
       rect:
         serializedVersion: 2
         x: 80
@@ -975,14 +981,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f9bcfd9f73c8f940800000000000000
-      internalID: 5330225111871830515
+      spriteID: bc5eadbc7ffade060800000000000000
+      internalID: 6984432075933410763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_34
+      name: tree_leaves_palette_34
       rect:
         serializedVersion: 2
         x: 96
@@ -996,14 +1002,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b08f89b76c34c860800000000000000
-      internalID: 7549225291572281527
+      spriteID: e652796d06cf59fd0800000000000000
+      internalID: -2335683338874444434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_35
+      name: tree_leaves_palette_35
       rect:
         serializedVersion: 2
         x: 0
@@ -1017,14 +1023,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4023a56d663bdce0800000000000000
-      internalID: -1379449017374400438
+      spriteID: 41dcb629a4f8ceca0800000000000000
+      internalID: -5986252254235341548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_36
+      name: tree_leaves_palette_36
       rect:
         serializedVersion: 2
         x: 16
@@ -1038,14 +1044,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db83bbf8778ad6f40800000000000000
-      internalID: 5723415932923754685
+      spriteID: f80ba44875649b820800000000000000
+      internalID: 2934453973904175247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_37
+      name: tree_leaves_palette_37
       rect:
         serializedVersion: 2
         x: 32
@@ -1059,14 +1065,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ccc1891f6bd6c220800000000000000
-      internalID: 2505931512894049481
+      spriteID: 334d71b5a35a71360800000000000000
+      internalID: 7140357404274185267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_38
+      name: tree_leaves_palette_38
       rect:
         serializedVersion: 2
         x: 48
@@ -1080,14 +1086,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac3b949be361d9600800000000000000
-      internalID: 476561594223539146
+      spriteID: 7607140c100126900800000000000000
+      internalID: 676120493765521511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_39
+      name: tree_leaves_palette_39
       rect:
         serializedVersion: 2
         x: 64
@@ -1101,14 +1107,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00bc95e4fb3cf9770800000000000000
-      internalID: 8619823438231096064
+      spriteID: a589885e38706a1d0800000000000000
+      internalID: -3339973810575599526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_40
+      name: tree_leaves_palette_40
       rect:
         serializedVersion: 2
         x: 80
@@ -1122,14 +1128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae753ec2d0aa66400800000000000000
-      internalID: 317127797340592106
+      spriteID: 7c26b1b643ebe98d0800000000000000
+      internalID: -2837621582852300089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_41
+      name: tree_leaves_palette_41
       rect:
         serializedVersion: 2
         x: 96
@@ -1143,14 +1149,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8459d0e113ac99c0800000000000000
-      internalID: -3919078278537063282
+      spriteID: 838322ebb82b758f0800000000000000
+      internalID: -551776116069484488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_42
+      name: tree_leaves_palette_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce66c546a29c9aa10800000000000000
+      internalID: 1921287899959813868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_leaves_palette_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aa6af445b42cbf0800000000000000
+      internalID: -305598999222113774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_leaves_palette_44
       rect:
         serializedVersion: 2
         x: 32
@@ -1164,14 +1212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ddc5b3ea77b56a90800000000000000
-      internalID: -7321243880786637358
+      spriteID: 7b896e42ed5727e30800000000000000
+      internalID: 4499788574658828471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_43
+      name: tree_leaves_palette_45
       rect:
         serializedVersion: 2
         x: 48
@@ -1185,14 +1233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49b59eb005b6e300800000000000000
-      internalID: 281111041559345484
+      spriteID: b30d3957dd71c35e0800000000000000
+      internalID: -1928640300493582277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_44
+      name: tree_leaves_palette_46
       rect:
         serializedVersion: 2
         x: 64
@@ -1206,14 +1254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87700e2958c12a640800000000000000
-      internalID: 5089661888902465400
+      spriteID: 929b067289e03c150800000000000000
+      internalID: 5891568784189208873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_45
+      name: tree_leaves_palette_47
       rect:
         serializedVersion: 2
         x: 80
@@ -1227,14 +1275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aab5d20c3b7b8b440800000000000000
-      internalID: 4951909772945087402
+      spriteID: c128781fc75268810800000000000000
+      internalID: 1767141122347860508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: log_palette_46
+      name: tree_leaves_palette_48
       rect:
         serializedVersion: 2
         x: 96
@@ -1248,8 +1296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75825e4a9e9131610800000000000000
-      internalID: 1590643584676472919
+      spriteID: 380a15212310816a0800000000000000
+      internalID: -6478426749405126525
       vertices: []
       indices: 
       edges: []
@@ -1257,7 +1305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4e0f3761f2fe738448fe7f3251310d70
+    spriteID: 3948c8bf6112ae54ab6af1056de24653
     internalID: 0
     vertices: []
     indices: 
