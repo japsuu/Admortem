@@ -1047,3 +1047,4 @@ MonoBehaviour:
     m_RuleTransform: 0
   friendTiles:
   - {fileID: 11400000, guid: a1ee27738c66d3848b4367b6042de474, type: 2}
+  - {fileID: 11400000, guid: 3cf84f8b1f5ae1b42b76c538c23f6462, type: 2}
