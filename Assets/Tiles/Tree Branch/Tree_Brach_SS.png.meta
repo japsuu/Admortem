@@ -1,0 +1,1467 @@
+fileFormatVersion: 2
+guid: e4f3faf47fa1efc49844a882e48acc01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5597572494531389124
+    second: tree_branch_palette_0
+  - first:
+      213: 3696247731366640237
+    second: tree_branch_palette_1
+  - first:
+      213: 7090139736972886703
+    second: tree_branch_palette_2
+  - first:
+      213: 461787361772663014
+    second: tree_branch_palette_3
+  - first:
+      213: -1744433301931161284
+    second: tree_branch_palette_4
+  - first:
+      213: 7121030646232252374
+    second: tree_branch_palette_5
+  - first:
+      213: -5156448003417845881
+    second: tree_branch_palette_6
+  - first:
+      213: 2913245716565803654
+    second: tree_branch_palette_7
+  - first:
+      213: -598384385079749703
+    second: tree_branch_palette_8
+  - first:
+      213: 8977435463469248094
+    second: tree_branch_palette_9
+  - first:
+      213: 9052484482914781753
+    second: tree_branch_palette_10
+  - first:
+      213: -4326159085343907818
+    second: tree_branch_palette_11
+  - first:
+      213: -9109835280334534665
+    second: tree_branch_palette_12
+  - first:
+      213: -4322486552442862834
+    second: tree_branch_palette_13
+  - first:
+      213: 5817985324397736718
+    second: tree_branch_palette_14
+  - first:
+      213: -680950679577216090
+    second: tree_branch_palette_15
+  - first:
+      213: 3557776169169588876
+    second: tree_branch_palette_16
+  - first:
+      213: -3792069623842452850
+    second: tree_branch_palette_17
+  - first:
+      213: 8174200513429145199
+    second: tree_branch_palette_18
+  - first:
+      213: 4320285446588250445
+    second: tree_branch_palette_19
+  - first:
+      213: -2500166229072139247
+    second: tree_branch_palette_20
+  - first:
+      213: -5459592906171902627
+    second: tree_branch_palette_21
+  - first:
+      213: 843802469051985845
+    second: tree_branch_palette_22
+  - first:
+      213: -2198318648316912714
+    second: tree_branch_palette_23
+  - first:
+      213: 7002153475651033585
+    second: tree_branch_palette_24
+  - first:
+      213: -8876201975787895886
+    second: tree_branch_palette_25
+  - first:
+      213: -989092318860671428
+    second: tree_branch_palette_26
+  - first:
+      213: 5722301094377412294
+    second: tree_branch_palette_27
+  - first:
+      213: -8059295267537998333
+    second: tree_branch_palette_28
+  - first:
+      213: 8221346073715234966
+    second: tree_branch_palette_29
+  - first:
+      213: -2608758440109118586
+    second: tree_branch_palette_30
+  - first:
+      213: -2818137106961658527
+    second: tree_branch_palette_31
+  - first:
+      213: -3486568256790730088
+    second: tree_branch_palette_32
+  - first:
+      213: -1332386258455755937
+    second: tree_branch_palette_33
+  - first:
+      213: 4210053074365860367
+    second: tree_branch_palette_34
+  - first:
+      213: -684817814451624193
+    second: tree_branch_palette_35
+  - first:
+      213: -2530414695808594202
+    second: tree_branch_palette_36
+  - first:
+      213: -8256350783952145609
+    second: tree_branch_palette_37
+  - first:
+      213: -8233236116515662795
+    second: tree_branch_palette_38
+  - first:
+      213: 3791387591063267372
+    second: tree_branch_palette_39
+  - first:
+      213: 237323534010272317
+    second: tree_branch_palette_40
+  - first:
+      213: 8638449572496798181
+    second: tree_branch_palette_41
+  - first:
+      213: -8266348682833008339
+    second: tree_branch_palette_42
+  - first:
+      213: 7451814703867936832
+    second: tree_branch_palette_43
+  - first:
+      213: 2642186111556729659
+    second: tree_branch_palette_44
+  - first:
+      213: 2011613141474339498
+    second: tree_branch_palette_45
+  - first:
+      213: -6711297517179528655
+    second: tree_branch_palette_46
+  - first:
+      213: 9077404823579356127
+    second: tree_branch_palette_47
+  - first:
+      213: -1548000110128073950
+    second: tree_branch_palette_48
+  - first:
+      213: 5460078080685925483
+    second: Tree_Brach_SS_0
+  - first:
+      213: 8436987162560804923
+    second: Tree_Brach_SS_1
+  - first:
+      213: 3270565598598025206
+    second: Tree_Brach_SS_2
+  - first:
+      213: 274540957333426281
+    second: Tree_Brach_SS_3
+  - first:
+      213: 5442648428316099622
+    second: Tree_Brach_SS_4
+  - first:
+      213: -1289401540335341202
+    second: Tree_Brach_SS_5
+  - first:
+      213: -7949797893603134335
+    second: Tree_Brach_SS_6
+  - first:
+      213: 5837351982083706933
+    second: Tree_Brach_SS_7
+  - first:
+      213: 4993181912651571305
+    second: Tree_Brach_SS_8
+  - first:
+      213: -5299981970913556028
+    second: Tree_Brach_SS_9
+  - first:
+      213: 1410410014398606832
+    second: Tree_Brach_SS_10
+  - first:
+      213: 2781019106521676288
+    second: Tree_Brach_SS_11
+  - first:
+      213: 6790935133881232730
+    second: Tree_Brach_SS_12
+  - first:
+      213: -8988671342934999286
+    second: Tree_Brach_SS_13
+  - first:
+      213: -1109896077112670050
+    second: Tree_Brach_SS_14
+  - first:
+      213: 8164280989162262563
+    second: Tree_Brach_SS_15
+  - first:
+      213: -5579203489566690143
+    second: Tree_Brach_SS_16
+  - first:
+      213: 6799059519134669353
+    second: Tree_Brach_SS_17
+  - first:
+      213: 5683355683099205464
+    second: Tree_Brach_SS_18
+  - first:
+      213: 1129887932104230474
+    second: Tree_Brach_SS_19
+  - first:
+      213: -341143610591366564
+    second: Tree_Brach_SS_20
+  - first:
+      213: 500427882065305849
+    second: Tree_Brach_SS_21
+  - first:
+      213: -5805411121861776215
+    second: Tree_Brach_SS_22
+  - first:
+      213: 5586370951747150307
+    second: Tree_Brach_SS_23
+  - first:
+      213: 4930432015337064587
+    second: Tree_Brach_SS_24
+  - first:
+      213: -3196318950418202550
+    second: Tree_Brach_SS_25
+  - first:
+      213: -351731851682440927
+    second: Tree_Brach_SS_26
+  - first:
+      213: -317666501991392650
+    second: Tree_Brach_SS_27
+  - first:
+      213: -4613390272069319300
+    second: Tree_Brach_SS_28
+  - first:
+      213: -3554793836679111125
+    second: Tree_Brach_SS_29
+  - first:
+      213: -6342523534463847641
+    second: Tree_Brach_SS_30
+  - first:
+      213: 7865210670401143612
+    second: Tree_Brach_SS_31
+  - first:
+      213: -8524559286814017787
+    second: Tree_Brach_SS_32
+  - first:
+      213: -4190402631869900699
+    second: Tree_Brach_SS_33
+  - first:
+      213: 7067376454023290802
+    second: Tree_Brach_SS_34
+  - first:
+      213: -4050821695530496330
+    second: Tree_Brach_SS_35
+  - first:
+      213: 6953594384082579532
+    second: Tree_Brach_SS_36
+  - first:
+      213: -4850919879224727816
+    second: Tree_Brach_SS_37
+  - first:
+      213: 2865843108364887578
+    second: Tree_Brach_SS_38
+  - first:
+      213: -3541933331758130651
+    second: Tree_Brach_SS_39
+  - first:
+      213: -7494594434356783039
+    second: Tree_Brach_SS_40
+  - first:
+      213: 2907041476653443223
+    second: Tree_Brach_SS_41
+  - first:
+      213: -7197036953970237794
+    second: Tree_Brach_SS_42
+  - first:
+      213: 8452745993741081178
+    second: Tree_Brach_SS_43
+  - first:
+      213: 3007154387153661496
+    second: Tree_Brach_SS_44
+  - first:
+      213: 7879013046857436372
+    second: Tree_Brach_SS_45
+  - first:
+      213: -492632484796162758
+    second: Tree_Brach_SS_46
+  - first:
+      213: -5828271061636954769
+    second: Tree_Brach_SS_47
+  - first:
+      213: -3557849152458438612
+    second: Tree_Brach_SS_48
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tree_Brach_SS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b646e2de51816cb40800000000000000
+      internalID: 5460078080685925483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38b7fe8f13361570800000000000000
+      internalID: 8436987162560804923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff4c0f6512636d20800000000000000
+      internalID: 3270565598598025206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960972ecb8d5fc300800000000000000
+      internalID: 274540957333426281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6248e1fb8eb288b40800000000000000
+      internalID: 5442648428316099622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61787f61202b1ee0800000000000000
+      internalID: -1289401540335341202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184f2a38fe4aca190800000000000000
+      internalID: -7949797893603134335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530950933b0720150800000000000000
+      internalID: 5837351982083706933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960a08a9e785b4540800000000000000
+      internalID: 4993181912651571305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c909bb5a7ea276b0800000000000000
+      internalID: -5299981970913556028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fde1e77f68c29310800000000000000
+      internalID: 1410410014398606832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a7cc5942a289620800000000000000
+      internalID: 2781019106521676288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5de5bb368f3e3e50800000000000000
+      internalID: 6790935133881232730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f30a1a903d14380800000000000000
+      internalID: -8988671342934999286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98891af56bd890f0800000000000000
+      internalID: -1109896077112670050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320dd7dad4a5d4170800000000000000
+      internalID: 8164280989162262563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4f1c27cffa292b0800000000000000
+      internalID: -5579203489566690143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a92c41c9c1b5e50800000000000000
+      internalID: 6799059519134669353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f535fc1e55fde40800000000000000
+      internalID: 5683355683099205464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46c21d761b2eaf00800000000000000
+      internalID: 1129887932104230474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52be4191b3044bf0800000000000000
+      internalID: -341143610591366564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f02432e180e1f600800000000000000
+      internalID: 500427882065305849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aca352d7590f6fa0800000000000000
+      internalID: -5805411121861776215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1237268c6c68d40800000000000000
+      internalID: 5586370951747150307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88016f9bc96c6440800000000000000
+      internalID: 4930432015337064587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40497379d464a3d0800000000000000
+      internalID: -3196318950418202550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12917449eb56e1bf0800000000000000
+      internalID: -351731851682440927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a13cfdffb679bf0800000000000000
+      internalID: -317666501991392650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75c0178df1f9ffb0800000000000000
+      internalID: -4613390272069319300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e5ef2f6d5daaec0800000000000000
+      internalID: -3554793836679111125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7233ab41374daf7a0800000000000000
+      internalID: -6342523534463847641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c334fdcde67d62d60800000000000000
+      internalID: 7865210670401143612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50771b26e7ea2b980800000000000000
+      internalID: -8524559286814017787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568588d0203b8d5c0800000000000000
+      internalID: -4190402631869900699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf940cb07d541260800000000000000
+      internalID: 7067376454023290802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be857d412798c7c0800000000000000
+      internalID: -4050821695530496330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40b4672041208060800000000000000
+      internalID: 6953594384082579532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6ede432121eacb0800000000000000
+      internalID: -4850919879224727816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1627188f1585c720800000000000000
+      internalID: 2865843108364887578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ad076966688dec0800000000000000
+      internalID: -3541933331758130651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1485b8ce11addf790800000000000000
+      internalID: -7494594434356783039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798614322d2e75820800000000000000
+      internalID: 2907041476653443223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e9e3b950dfe1c90800000000000000
+      internalID: -7197036953970237794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a1b8d52bf2e4570800000000000000
+      internalID: 8452745993741081178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e2d078bfe8bb920800000000000000
+      internalID: 3007154387153661496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc0b9e0f90e75d60800000000000000
+      internalID: 7879013046857436372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d18ea7d51d929f0800000000000000
+      internalID: -492632484796162758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65c0745952dd1fa0800000000000000
+      internalID: -5828271061636954769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Brach_SS_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c284a4fcb0bff9ec0800000000000000
+      internalID: -3557849152458438612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e3d1bc13000bb104d89270521ec6eead
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

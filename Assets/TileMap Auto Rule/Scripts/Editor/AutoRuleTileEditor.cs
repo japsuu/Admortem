@@ -6,7 +6,7 @@ using UnityEditor;
 // https://brullalex.itch.io/
 // ----------------------------------------------------------------------------
 
-[CustomEditor(typeof(TerrainAutoRuleTile))]
+[CustomEditor(typeof(AutoRuleTile))]
 [CanEditMultipleObjects]
 public class ObjectBuilderEditor : Editor
 {
@@ -14,7 +14,7 @@ public class ObjectBuilderEditor : Editor
     {
         DrawDefaultInspector();
 
-        TerrainAutoRuleTile myScript = (TerrainAutoRuleTile)target;
+        AutoRuleTile myScript = (AutoRuleTile)target;
         if (GUILayout.Button("Build Rule Tile"))
         {
             myScript.OverrideRuleTile();

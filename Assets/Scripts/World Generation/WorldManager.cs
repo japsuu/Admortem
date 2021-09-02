@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -8,11 +6,6 @@ using UnityEngine.Tilemaps;
 public class WorldManager : MonoBehaviour
 {
     public static WorldManager Instance;
-    
-    //public int colliderChunkWidth = 25;
-    
-    //public GameObject colliderTilemapPrefab;
-    //public TileBase dummyTile;
 
     public Tilemap foregroundTilemap;
     public Tilemap backgroundTilemap;
