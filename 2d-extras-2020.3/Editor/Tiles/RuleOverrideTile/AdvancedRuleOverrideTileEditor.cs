@@ -182,7 +182,7 @@ namespace UnityEditor
                 Rect matrixRect = new Rect(matrixRectPosition, matrixRectSize);
                 Rect spriteRect = new Rect(rect.xMax - matrixWidth - 5f, yPos, matrixWidth, k_DefaultElementHeight);
 
-                ruleTileEditor.RuleInspectorOnGUI(inspectorRect, rule);
+                ruleTileEditor.RuleInspectorOnGUI(inspectorRect, rule, -1);
                 ruleTileEditor.SpriteOnGUI(spriteRect, rule);
 
                 if (!isMissing)

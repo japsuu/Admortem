@@ -111,6 +111,9 @@ namespace UnityEditor
                 , "The maximum speed at which the animation is played.");
             public static readonly GUIContent tilingRulesAnimationSize = EditorGUIUtility.TrTextContent("Size"
                 , "The number of Sprites in the animation.");
+            
+            public static readonly GUIContent animatedTilingRulesRandomSize = EditorGUIUtility.TrTextContent("Size"
+                , "The number of Tile Animations to randomize from.");
         }
         
         /// <summary>
@@ -159,7 +162,7 @@ namespace UnityEditor
         /// Width for labels
         /// </summary>
         public const float k_LabelWidth = 80f;
-
+        
         /// <summary>
         /// OnEnable for the RuleTileEditor
         /// </summary>
@@ -250,8 +253,31 @@ namespace UnityEditor
 
             switch (rule.m_Output)
             {
-                case RuleTile.TilingRule.OutputSprite.Random:
-                case RuleTile.TilingRule.OutputSprite.Animation:
+                case RuleTile.TilingRuleOutput.OutputSprite.RandomAnimation:
+                {
+                    inspectorHeight = k_DefaultElementHeight + k_SingleLineHeight * (rule.m_TileAnimations.Length + 4) + k_PaddingBetweenRules;
+
+                    
+                    foreach (var t in rule.m_TileAnimations)
+                    {
+                        if (t.expandedInInspector)
+                        {
+                            if (t.Frames != null)
+                            {
+                                if(t.Frames.Length > 1)
+                                    inspectorHeight += k_SingleLineHeight * 2 + k_SingleLineHeight * t.Frames.Length;
+                                else
+                                {
+                                    inspectorHeight += k_SingleLineHeight * 3;
+                                }
+                            }
+                        }
+                    }
+                    
+                    break;
+                }
+                case RuleTile.TilingRuleOutput.OutputSprite.Random:
+                case RuleTile.TilingRuleOutput.OutputSprite.Animation:
                     inspectorHeight = k_DefaultElementHeight + k_SingleLineHeight * (rule.m_Sprites.Length + 3) + k_PaddingBetweenRules;
                     break;
             }
@@ -289,7 +315,7 @@ namespace UnityEditor
             Rect matrixRect = new Rect(rect.xMax - matrixSize.x - spriteRect.width - 10f, yPos, matrixSize.x, matrixSize.y);
             Rect inspectorRect = new Rect(rect.xMin, yPos, rect.width - matrixSize.x - spriteRect.width - 20f, height);
 
-            RuleInspectorOnGUI(inspectorRect, rule);
+            RuleInspectorOnGUI(inspectorRect, rule, index);
             RuleMatrixOnGUI(tile, matrixRect, bounds, rule);
             SpriteOnGUI(spriteRect, rule);
         }
@@ -723,6 +749,8 @@ namespace UnityEditor
         /// <param name="tilingRule">Rule to draw Sprite Inspector for</param>
         public virtual void SpriteOnGUI(Rect rect, RuleTile.TilingRuleOutput tilingRule)
         {
+            if (tilingRule.m_Sprites.Length == 0) tilingRule.m_Sprites = new Sprite[1];
+            
             tilingRule.m_Sprites[0] = EditorGUI.ObjectField(rect, tilingRule.m_Sprites[0], typeof(Sprite), false) as Sprite;
         }
 
@@ -731,7 +759,7 @@ namespace UnityEditor
         /// </summary>
         /// <param name="rect">Rect to draw Inspector in</param>
         /// <param name="tilingRule">Rule to draw Inspector for</param>
-        public void RuleInspectorOnGUI(Rect rect, RuleTile.TilingRuleOutput tilingRule)
+        public void RuleInspectorOnGUI(Rect rect, RuleTile.TilingRuleOutput tilingRule, int index)
         {
             float y = rect.yMin;
             GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesGameObject);
@@ -741,30 +769,60 @@ namespace UnityEditor
             tilingRule.m_ColliderType = (Tile.ColliderType)EditorGUI.EnumPopup(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_ColliderType);
             y += k_SingleLineHeight;
             GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesOutput);
-            tilingRule.m_Output = (RuleTile.TilingRule.OutputSprite)EditorGUI.EnumPopup(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_Output);
+            tilingRule.m_Output = (RuleTile.TilingRuleOutput.OutputSprite)EditorGUI.EnumPopup(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_Output);
             y += k_SingleLineHeight;
 
-            if (tilingRule.m_Output == RuleTile.TilingRule.OutputSprite.Animation)
+            switch (tilingRule.m_Output)
             {
-                GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesMinSpeed);
-                tilingRule.m_MinAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_MinAnimationSpeed);
-                y += k_SingleLineHeight;
-                GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesMaxSpeed);
-                tilingRule.m_MaxAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_MaxAnimationSpeed);
-                y += k_SingleLineHeight;
-            }
-            if (tilingRule.m_Output == RuleTile.TilingRule.OutputSprite.Random)
-            {
-                GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesNoise);
-                tilingRule.m_PerlinScale = EditorGUI.Slider(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_PerlinScale, 0.001f, 0.999f);
-                y += k_SingleLineHeight;
+                case RuleTile.TilingRuleOutput.OutputSprite.Animation:
+                    
+                    GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesMinSpeed);
+                    tilingRule.m_MinAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_MinAnimationSpeed);
+                    y += k_SingleLineHeight;
+                    GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesMaxSpeed);
+                    tilingRule.m_MaxAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_MaxAnimationSpeed);
+                    y += k_SingleLineHeight;
+                    break;
+                
+                
+                case RuleTile.TilingRuleOutput.OutputSprite.Random:
+                    
+                    GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesNoise);
+                    tilingRule.m_PerlinScale = EditorGUI.Slider(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_PerlinScale, 0.001f, 0.999f);
+                    y += k_SingleLineHeight;
 
-                GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesShuffle);
-                tilingRule.m_RandomTransform = (RuleTile.TilingRule.Transform)EditorGUI.EnumPopup(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_RandomTransform);
-                y += k_SingleLineHeight;
+                    GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesShuffle);
+                    tilingRule.m_RandomTransform = (RuleTile.TilingRuleOutput.Transform)EditorGUI.EnumPopup(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_RandomTransform);
+                    y += k_SingleLineHeight;
+                    break;
+                
+                
+                case RuleTile.TilingRuleOutput.OutputSprite.RandomAnimation:
+                    
+                    // Animation settings
+                    //GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesMinSpeed);
+                    //tilingRule.m_MinAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_MinAnimationSpeed);
+                    //y += k_SingleLineHeight;
+                    //GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesMaxSpeed);
+                    //tilingRule.m_MaxAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_MaxAnimationSpeed);
+                    //y += k_SingleLineHeight;
+                
+                    // Randomization settings (Noise)
+                    GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesNoise);
+                    tilingRule.m_PerlinScale = EditorGUI.Slider(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_PerlinScale, 0.001f, 0.999f);
+                    y += k_SingleLineHeight;
+
+                    // Randomization settings (Shuffle)
+                    GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.tilingRulesShuffle);
+                    tilingRule.m_RandomTransform = (RuleTile.TilingRuleOutput.Transform)EditorGUI.EnumPopup(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_RandomTransform);
+                    y += k_SingleLineHeight;
+                    break;
             }
 
-            if (tilingRule.m_Output != RuleTile.TilingRule.OutputSprite.Single)
+            if (tilingRule.m_Output == RuleTile.TilingRuleOutput.OutputSprite.Single) return;
+
+            // Only draw the m_Sprites array if Output != RandomAnimation
+            if (tilingRule.m_Output != RuleTile.TilingRuleOutput.OutputSprite.RandomAnimation)
             {
                 GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight)
                     , tilingRule.m_Output == RuleTile.TilingRuleOutput.OutputSprite.Animation ? Styles.tilingRulesAnimationSize : Styles.tilingRulesRandomSize);
@@ -779,6 +837,115 @@ namespace UnityEditor
                     tilingRule.m_Sprites[i] = EditorGUI.ObjectField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_Sprites[i], typeof(Sprite), false) as Sprite;
                     y += k_SingleLineHeight;
                 }
+            }
+            else
+            {
+                GUI.Label(new Rect(rect.xMin, y, k_LabelWidth, k_SingleLineHeight), Styles.animatedTilingRulesRandomSize);
+                
+                EditorGUI.BeginChangeCheck();
+                int newLength = EditorGUI.DelayedIntField(new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), tilingRule.m_TileAnimations.Length);
+                if (EditorGUI.EndChangeCheck())
+                    Array.Resize(ref tilingRule.m_TileAnimations, Math.Max(newLength, 1));
+                
+                EditorGUI.LabelField(new Rect(rect.xMax + 10, y, 70, k_SingleLineHeight), "Min / Max");
+                
+                y += k_SingleLineHeight;
+                
+                //EditorGUI.Foldout()
+                
+                // Get all the tilingRules
+                SerializedProperty rules = serializedObject.FindProperty("m_TilingRules");
+
+                // Get all the tileAnimations of that rule
+                SerializedProperty tileAnimations = rules.GetArrayElementAtIndex(index).FindPropertyRelative("m_TileAnimations");
+
+                // Draw the tileAnimations array
+                for (int j = 0; j < tileAnimations.arraySize; j++)
+                {
+                    SerializedProperty frames = tileAnimations.GetArrayElementAtIndex(j).FindPropertyRelative("Frames");
+
+                    EditorGUI.BeginChangeCheck();
+                    EditorGUI.PropertyField(
+                        new Rect(rect.xMin + k_LabelWidth, y,
+                            rect.width - k_LabelWidth, k_SingleLineHeight),
+                        frames,
+                        true);
+
+                    if (EditorGUI.EndChangeCheck())
+                    {
+                        serializedObject.ApplyModifiedProperties();
+                    }
+                    
+                    tilingRule.m_MinAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 10, y, 30, k_SingleLineHeight), 1);
+                    tilingRule.m_MaxAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 42, y, 30, k_SingleLineHeight), 1);
+                    
+                    if(frames.isExpanded)
+                    {
+                        if(frames.arraySize > 0)
+                            y += k_SingleLineHeight * 3 + (k_SingleLineHeight + 2) * frames.arraySize;
+                        else
+                        {
+                            y += k_SingleLineHeight * 4;
+                        }
+                    }
+                    else
+                    {
+                        y += k_SingleLineHeight;
+                    }
+                    
+                    if(tilingRule.m_TileAnimations.Length > j)
+                        tilingRule.m_TileAnimations[j].expandedInInspector = frames.isExpanded;
+                }
+
+
+/*
+                SerializedProperty allTilingRuleProps = serializedObject.FindProperty("m_TilingRules");
+
+                for (int i = 0; i < allTilingRuleProps.arraySize; i++)
+                {
+                    SerializedProperty currentTilingRuleProp = allTilingRuleProps.GetArrayElementAtIndex(i);
+                    
+                    tilingRule.m_MinAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 10, y, 30, k_SingleLineHeight), 1);
+                    tilingRule.m_MaxAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 42, y, 30, k_SingleLineHeight), 1);
+                    
+                    y += k_SingleLineHeight;
+                }
+
+                for (int i = 0; i < tilingRule.m_TileAnimations.Length; i++)
+                {
+                    //RuleTile.TilingRule rule = tile.m_TilingRules[index];
+                    
+                    SerializedProperty prop = serializedObject.FindProperty("TileAnimations");
+                    serializedObject.Update();
+                    if (prop != null)
+                    {
+                        //SerializedProperty iterator = prop.Copy();
+                        //
+                        //while (iterator.Next(true))
+                        //{
+                        //    Debug.Log(iterator.name);
+                        //}
+                        
+                        EditorGUI.PropertyField(
+                            new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight), prop,
+                            true);
+                        serializedObject.ApplyModifiedProperties();   
+                    }
+                    
+                    //TileAnimation animation =
+                    //    (TileAnimation) EditorGUI.ObjectField(
+                    //        new Rect(rect.xMin + k_LabelWidth, y, rect.width - k_LabelWidth, k_SingleLineHeight),
+                    //        tilingRule.m_TileAnimations[i], typeof(TileAnimation), false);
+                    //
+                    //if(animation != null && animation.Frames != null)
+                    //    tilingRule.m_TileAnimations[i] = animation;
+                    
+                    tilingRule.m_MinAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 10, y, 30, k_SingleLineHeight), 1);
+                    tilingRule.m_MaxAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 42, y, 30, k_SingleLineHeight), 1);
+                    
+                    y += k_SingleLineHeight;
+                }
+*/
             }
         }
 

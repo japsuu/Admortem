@@ -1,301 +1,154 @@
 fileFormatVersion: 2
-guid: e4f3faf47fa1efc49844a882e48acc01
+guid: 87831ac81b6f0fb4da6294044c8b20e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5597572494531389124
-    second: tree_branch_palette_0
+      213: 4414332082258555255
+    second: Tree_Brach_SS2_0
   - first:
-      213: 3696247731366640237
-    second: tree_branch_palette_1
+      213: -3048458426355311616
+    second: Tree_Brach_SS2_1
   - first:
-      213: 7090139736972886703
-    second: tree_branch_palette_2
+      213: 6865313692263677445
+    second: Tree_Brach_SS2_2
   - first:
-      213: 461787361772663014
-    second: tree_branch_palette_3
+      213: 9107276979625021059
+    second: Tree_Brach_SS2_3
   - first:
-      213: -1744433301931161284
-    second: tree_branch_palette_4
+      213: 2991247612613701985
+    second: Tree_Brach_SS2_4
   - first:
-      213: 7121030646232252374
-    second: tree_branch_palette_5
+      213: 7064125699581112988
+    second: Tree_Brach_SS2_5
   - first:
-      213: -5156448003417845881
-    second: tree_branch_palette_6
+      213: 2567937423421979272
+    second: Tree_Brach_SS2_6
   - first:
-      213: 2913245716565803654
-    second: tree_branch_palette_7
+      213: -7101080739096794942
+    second: Tree_Brach_SS2_7
   - first:
-      213: -598384385079749703
-    second: tree_branch_palette_8
+      213: -88501633647732272
+    second: Tree_Brach_SS2_8
   - first:
-      213: 8977435463469248094
-    second: tree_branch_palette_9
+      213: 8741528010272500733
+    second: Tree_Brach_SS2_9
   - first:
-      213: 9052484482914781753
-    second: tree_branch_palette_10
+      213: -2041045902467071998
+    second: Tree_Brach_SS2_10
   - first:
-      213: -4326159085343907818
-    second: tree_branch_palette_11
+      213: -8512055212979904920
+    second: Tree_Brach_SS2_11
   - first:
-      213: -9109835280334534665
-    second: tree_branch_palette_12
+      213: 7170112013516249319
+    second: Tree_Brach_SS2_12
   - first:
-      213: -4322486552442862834
-    second: tree_branch_palette_13
+      213: 2011646755008627854
+    second: Tree_Brach_SS2_13
   - first:
-      213: 5817985324397736718
-    second: tree_branch_palette_14
+      213: -2508589587696773059
+    second: Tree_Brach_SS2_14
   - first:
-      213: -680950679577216090
-    second: tree_branch_palette_15
+      213: 2420267865107672411
+    second: Tree_Brach_SS2_15
   - first:
-      213: 3557776169169588876
-    second: tree_branch_palette_16
+      213: 1320427292453020754
+    second: Tree_Brach_SS2_16
   - first:
-      213: -3792069623842452850
-    second: tree_branch_palette_17
+      213: -9010902435164190209
+    second: Tree_Brach_SS2_17
   - first:
-      213: 8174200513429145199
-    second: tree_branch_palette_18
+      213: 7321331909286842111
+    second: Tree_Brach_SS2_18
   - first:
-      213: 4320285446588250445
-    second: tree_branch_palette_19
+      213: -2642007092269365097
+    second: Tree_Brach_SS2_19
   - first:
-      213: -2500166229072139247
-    second: tree_branch_palette_20
+      213: -764217155511391028
+    second: Tree_Brach_SS2_20
   - first:
-      213: -5459592906171902627
-    second: tree_branch_palette_21
+      213: -6074732873316838204
+    second: Tree_Brach_SS2_21
   - first:
-      213: 843802469051985845
-    second: tree_branch_palette_22
+      213: 1076446167258916974
+    second: Tree_Brach_SS2_22
   - first:
-      213: -2198318648316912714
-    second: tree_branch_palette_23
+      213: -7269928190665010619
+    second: Tree_Brach_SS2_23
   - first:
-      213: 7002153475651033585
-    second: tree_branch_palette_24
+      213: 3192621245890955059
+    second: Tree_Brach_SS2_24
   - first:
-      213: -8876201975787895886
-    second: tree_branch_palette_25
+      213: -6956636303949503230
+    second: Tree_Brach_SS2_25
   - first:
-      213: -989092318860671428
-    second: tree_branch_palette_26
+      213: -5327833480186663065
+    second: Tree_Brach_SS2_26
   - first:
-      213: 5722301094377412294
-    second: tree_branch_palette_27
+      213: 5951066702779777720
+    second: Tree_Brach_SS2_27
   - first:
-      213: -8059295267537998333
-    second: tree_branch_palette_28
+      213: -8910420615628157816
+    second: Tree_Brach_SS2_28
   - first:
-      213: 8221346073715234966
-    second: tree_branch_palette_29
+      213: 5968941202960914019
+    second: Tree_Brach_SS2_29
   - first:
-      213: -2608758440109118586
-    second: tree_branch_palette_30
+      213: 4581757219482905340
+    second: Tree_Brach_SS2_30
   - first:
-      213: -2818137106961658527
-    second: tree_branch_palette_31
+      213: -4418912543436484175
+    second: Tree_Brach_SS2_31
   - first:
-      213: -3486568256790730088
-    second: tree_branch_palette_32
+      213: 4583954319603708839
+    second: Tree_Brach_SS2_32
   - first:
-      213: -1332386258455755937
-    second: tree_branch_palette_33
+      213: 7573216733364750824
+    second: Tree_Brach_SS2_33
   - first:
-      213: 4210053074365860367
-    second: tree_branch_palette_34
+      213: 4030060765097203461
+    second: Tree_Brach_SS2_34
   - first:
-      213: -684817814451624193
-    second: tree_branch_palette_35
+      213: 8038068966092904042
+    second: Tree_Brach_SS2_35
   - first:
-      213: -2530414695808594202
-    second: tree_branch_palette_36
+      213: -5341418011708852960
+    second: Tree_Brach_SS2_36
   - first:
-      213: -8256350783952145609
-    second: tree_branch_palette_37
+      213: -2520351294067916918
+    second: Tree_Brach_SS2_37
   - first:
-      213: -8233236116515662795
-    second: tree_branch_palette_38
+      213: -4850288309952061814
+    second: Tree_Brach_SS2_38
   - first:
-      213: 3791387591063267372
-    second: tree_branch_palette_39
+      213: -4555803291494269041
+    second: Tree_Brach_SS2_39
   - first:
-      213: 237323534010272317
-    second: tree_branch_palette_40
+      213: 8572891734069292530
+    second: Tree_Brach_SS2_40
   - first:
-      213: 8638449572496798181
-    second: tree_branch_palette_41
+      213: 5797497852692189321
+    second: Tree_Brach_SS2_41
   - first:
-      213: -8266348682833008339
-    second: tree_branch_palette_42
+      213: -5956870986191720983
+    second: Tree_Brach_SS2_42
   - first:
-      213: 7451814703867936832
-    second: tree_branch_palette_43
+      213: -5164176906849677399
+    second: Tree_Brach_SS2_43
   - first:
-      213: 2642186111556729659
-    second: tree_branch_palette_44
+      213: -1421201648810530042
+    second: Tree_Brach_SS2_44
   - first:
-      213: 2011613141474339498
-    second: tree_branch_palette_45
+      213: -1448697253139425324
+    second: Tree_Brach_SS2_45
   - first:
-      213: -6711297517179528655
-    second: tree_branch_palette_46
+      213: 2069692859606429834
+    second: Tree_Brach_SS2_46
   - first:
-      213: 9077404823579356127
-    second: tree_branch_palette_47
+      213: 7319961363745018439
+    second: Tree_Brach_SS2_47
   - first:
-      213: -1548000110128073950
-    second: tree_branch_palette_48
-  - first:
-      213: 5460078080685925483
-    second: Tree_Brach_SS_0
-  - first:
-      213: 8436987162560804923
-    second: Tree_Brach_SS_1
-  - first:
-      213: 3270565598598025206
-    second: Tree_Brach_SS_2
-  - first:
-      213: 274540957333426281
-    second: Tree_Brach_SS_3
-  - first:
-      213: 5442648428316099622
-    second: Tree_Brach_SS_4
-  - first:
-      213: -1289401540335341202
-    second: Tree_Brach_SS_5
-  - first:
-      213: -7949797893603134335
-    second: Tree_Brach_SS_6
-  - first:
-      213: 5837351982083706933
-    second: Tree_Brach_SS_7
-  - first:
-      213: 4993181912651571305
-    second: Tree_Brach_SS_8
-  - first:
-      213: -5299981970913556028
-    second: Tree_Brach_SS_9
-  - first:
-      213: 1410410014398606832
-    second: Tree_Brach_SS_10
-  - first:
-      213: 2781019106521676288
-    second: Tree_Brach_SS_11
-  - first:
-      213: 6790935133881232730
-    second: Tree_Brach_SS_12
-  - first:
-      213: -8988671342934999286
-    second: Tree_Brach_SS_13
-  - first:
-      213: -1109896077112670050
-    second: Tree_Brach_SS_14
-  - first:
-      213: 8164280989162262563
-    second: Tree_Brach_SS_15
-  - first:
-      213: -5579203489566690143
-    second: Tree_Brach_SS_16
-  - first:
-      213: 6799059519134669353
-    second: Tree_Brach_SS_17
-  - first:
-      213: 5683355683099205464
-    second: Tree_Brach_SS_18
-  - first:
-      213: 1129887932104230474
-    second: Tree_Brach_SS_19
-  - first:
-      213: -341143610591366564
-    second: Tree_Brach_SS_20
-  - first:
-      213: 500427882065305849
-    second: Tree_Brach_SS_21
-  - first:
-      213: -5805411121861776215
-    second: Tree_Brach_SS_22
-  - first:
-      213: 5586370951747150307
-    second: Tree_Brach_SS_23
-  - first:
-      213: 4930432015337064587
-    second: Tree_Brach_SS_24
-  - first:
-      213: -3196318950418202550
-    second: Tree_Brach_SS_25
-  - first:
-      213: -351731851682440927
-    second: Tree_Brach_SS_26
-  - first:
-      213: -317666501991392650
-    second: Tree_Brach_SS_27
-  - first:
-      213: -4613390272069319300
-    second: Tree_Brach_SS_28
-  - first:
-      213: -3554793836679111125
-    second: Tree_Brach_SS_29
-  - first:
-      213: -6342523534463847641
-    second: Tree_Brach_SS_30
-  - first:
-      213: 7865210670401143612
-    second: Tree_Brach_SS_31
-  - first:
-      213: -8524559286814017787
-    second: Tree_Brach_SS_32
-  - first:
-      213: -4190402631869900699
-    second: Tree_Brach_SS_33
-  - first:
-      213: 7067376454023290802
-    second: Tree_Brach_SS_34
-  - first:
-      213: -4050821695530496330
-    second: Tree_Brach_SS_35
-  - first:
-      213: 6953594384082579532
-    second: Tree_Brach_SS_36
-  - first:
-      213: -4850919879224727816
-    second: Tree_Brach_SS_37
-  - first:
-      213: 2865843108364887578
-    second: Tree_Brach_SS_38
-  - first:
-      213: -3541933331758130651
-    second: Tree_Brach_SS_39
-  - first:
-      213: -7494594434356783039
-    second: Tree_Brach_SS_40
-  - first:
-      213: 2907041476653443223
-    second: Tree_Brach_SS_41
-  - first:
-      213: -7197036953970237794
-    second: Tree_Brach_SS_42
-  - first:
-      213: 8452745993741081178
-    second: Tree_Brach_SS_43
-  - first:
-      213: 3007154387153661496
-    second: Tree_Brach_SS_44
-  - first:
-      213: 7879013046857436372
-    second: Tree_Brach_SS_45
-  - first:
-      213: -492632484796162758
-    second: Tree_Brach_SS_46
-  - first:
-      213: -5828271061636954769
-    second: Tree_Brach_SS_47
-  - first:
-      213: -3557849152458438612
-    second: Tree_Brach_SS_48
+      213: 2149105196270140784
+    second: Tree_Brach_SS2_48
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -421,7 +274,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree_Brach_SS_0
+      name: Tree_Brach_SS2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -435,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b646e2de51816cb40800000000000000
-      internalID: 5460078080685925483
+      spriteID: 771b1a304abd24d30800000000000000
+      internalID: 4414332082258555255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_1
+      name: Tree_Brach_SS2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -456,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b38b7fe8f13361570800000000000000
-      internalID: 8436987162560804923
+      spriteID: 00c9b807633b1b5d0800000000000000
+      internalID: -3048458426355311616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_2
+      name: Tree_Brach_SS2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -477,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ff4c0f6512636d20800000000000000
-      internalID: 3270565598598025206
+      spriteID: 50e700bdd6e764f50800000000000000
+      internalID: 6865313692263677445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_3
+      name: Tree_Brach_SS2_3
       rect:
         serializedVersion: 2
         x: 48
@@ -498,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 960972ecb8d5fc300800000000000000
-      internalID: 274540957333426281
+      spriteID: 38e44a9192c836e70800000000000000
+      internalID: 9107276979625021059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_4
+      name: Tree_Brach_SS2_4
       rect:
         serializedVersion: 2
         x: 64
@@ -519,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6248e1fb8eb288b40800000000000000
-      internalID: 5442648428316099622
+      spriteID: 1613319fadb038920800000000000000
+      internalID: 2991247612613701985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_5
+      name: Tree_Brach_SS2_5
       rect:
         serializedVersion: 2
         x: 80
@@ -540,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e61787f61202b1ee0800000000000000
-      internalID: -1289401540335341202
+      spriteID: c927d3c75e0d80260800000000000000
+      internalID: 7064125699581112988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_6
+      name: Tree_Brach_SS2_6
       rect:
         serializedVersion: 2
         x: 96
@@ -561,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184f2a38fe4aca190800000000000000
-      internalID: -7949797893603134335
+      spriteID: 88abf782b7523a320800000000000000
+      internalID: 2567937423421979272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_7
+      name: Tree_Brach_SS2_7
       rect:
         serializedVersion: 2
         x: 0
@@ -582,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 530950933b0720150800000000000000
-      internalID: 5837351982083706933
+      spriteID: 2c864c0e0b4e37d90800000000000000
+      internalID: -7101080739096794942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_8
+      name: Tree_Brach_SS2_8
       rect:
         serializedVersion: 2
         x: 16
@@ -603,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 960a08a9e785b4540800000000000000
-      internalID: 4993181912651571305
+      spriteID: 0d9926cab3495cef0800000000000000
+      internalID: -88501633647732272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_9
+      name: Tree_Brach_SS2_9
       rect:
         serializedVersion: 2
         x: 32
@@ -624,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c909bb5a7ea276b0800000000000000
-      internalID: -5299981970913556028
+      spriteID: dfb6b662965205970800000000000000
+      internalID: 8741528010272500733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_10
+      name: Tree_Brach_SS2_10
       rect:
         serializedVersion: 2
         x: 48
@@ -645,14 +498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fde1e77f68c29310800000000000000
-      internalID: 1410410014398606832
+      spriteID: 2000f2dc09fbca3e0800000000000000
+      internalID: -2041045902467071998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_11
+      name: Tree_Brach_SS2_11
       rect:
         serializedVersion: 2
         x: 64
@@ -666,14 +519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a7cc5942a289620800000000000000
-      internalID: 2781019106521676288
+      spriteID: 86e12d1f1ea1fd980800000000000000
+      internalID: -8512055212979904920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_12
+      name: Tree_Brach_SS2_12
       rect:
         serializedVersion: 2
         x: 80
@@ -687,14 +540,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5de5bb368f3e3e50800000000000000
-      internalID: 6790935133881232730
+      spriteID: 7e8956d23ea518360800000000000000
+      internalID: 7170112013516249319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_13
+      name: Tree_Brach_SS2_13
       rect:
         serializedVersion: 2
         x: 96
@@ -708,14 +561,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0f30a1a903d14380800000000000000
-      internalID: -8988671342934999286
+      spriteID: e844bd5c01ecaeb10800000000000000
+      internalID: 2011646755008627854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_14
+      name: Tree_Brach_SS2_14
       rect:
         serializedVersion: 2
         x: 0
@@ -729,14 +582,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98891af56bd890f0800000000000000
-      internalID: -1109896077112670050
+      spriteID: d381712af03bf2dd0800000000000000
+      internalID: -2508589587696773059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_15
+      name: Tree_Brach_SS2_15
       rect:
         serializedVersion: 2
         x: 16
@@ -750,14 +603,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 320dd7dad4a5d4170800000000000000
-      internalID: 8164280989162262563
+      spriteID: b5d2909dcc4869120800000000000000
+      internalID: 2420267865107672411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_16
+      name: Tree_Brach_SS2_16
       rect:
         serializedVersion: 2
         x: 32
@@ -771,14 +624,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a4f1c27cffa292b0800000000000000
-      internalID: -5579203489566690143
+      spriteID: 254a46660a9135210800000000000000
+      internalID: 1320427292453020754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_17
+      name: Tree_Brach_SS2_17
       rect:
         serializedVersion: 2
         x: 48
@@ -792,14 +645,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92a92c41c9c1b5e50800000000000000
-      internalID: 6799059519134669353
+      spriteID: ff9065e1af7d2f280800000000000000
+      internalID: -9010902435164190209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_18
+      name: Tree_Brach_SS2_18
       rect:
         serializedVersion: 2
         x: 64
@@ -813,14 +666,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85f535fc1e55fde40800000000000000
-      internalID: 5683355683099205464
+      spriteID: ffe46c7d4989a9560800000000000000
+      internalID: 7321331909286842111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_19
+      name: Tree_Brach_SS2_19
       rect:
         serializedVersion: 2
         x: 80
@@ -834,14 +687,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46c21d761b2eaf00800000000000000
-      internalID: 1129887932104230474
+      spriteID: 798c83b2c84b55bd0800000000000000
+      internalID: -2642007092269365097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_20
+      name: Tree_Brach_SS2_20
       rect:
         serializedVersion: 2
         x: 96
@@ -855,14 +708,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c52be4191b3044bf0800000000000000
-      internalID: -341143610591366564
+      spriteID: ccceb7acb84f465f0800000000000000
+      internalID: -764217155511391028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_21
+      name: Tree_Brach_SS2_21
       rect:
         serializedVersion: 2
         x: 0
@@ -876,14 +729,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f02432e180e1f600800000000000000
-      internalID: 500427882065305849
+      spriteID: 4c4df8413a632bba0800000000000000
+      internalID: -6074732873316838204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_22
+      name: Tree_Brach_SS2_22
       rect:
         serializedVersion: 2
         x: 16
@@ -897,14 +750,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aca352d7590f6fa0800000000000000
-      internalID: -5805411121861776215
+      spriteID: e686c4bf51e40fe00800000000000000
+      internalID: 1076446167258916974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_23
+      name: Tree_Brach_SS2_23
       rect:
         serializedVersion: 2
         x: 32
@@ -918,14 +771,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e1237268c6c68d40800000000000000
-      internalID: 5586370951747150307
+      spriteID: 54250dc04d60c1b90800000000000000
+      internalID: -7269928190665010619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_24
+      name: Tree_Brach_SS2_24
       rect:
         serializedVersion: 2
         x: 48
@@ -939,14 +792,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88016f9bc96c6440800000000000000
-      internalID: 4930432015337064587
+      spriteID: 33702bf9b187e4c20800000000000000
+      internalID: 3192621245890955059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_25
+      name: Tree_Brach_SS2_25
       rect:
         serializedVersion: 2
         x: 64
@@ -960,14 +813,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40497379d464a3d0800000000000000
-      internalID: -3196318950418202550
+      spriteID: 205e08fa320157f90800000000000000
+      internalID: -6956636303949503230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_26
+      name: Tree_Brach_SS2_26
       rect:
         serializedVersion: 2
         x: 80
@@ -981,14 +834,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12917449eb56e1bf0800000000000000
-      internalID: -351731851682440927
+      spriteID: 76f6a078dabbf06b0800000000000000
+      internalID: -5327833480186663065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_27
+      name: Tree_Brach_SS2_27
       rect:
         serializedVersion: 2
         x: 96
@@ -1002,14 +855,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67a13cfdffb679bf0800000000000000
-      internalID: -317666501991392650
+      spriteID: 8b208d5d2af669250800000000000000
+      internalID: 5951066702779777720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_28
+      name: Tree_Brach_SS2_28
       rect:
         serializedVersion: 2
         x: 0
@@ -1023,14 +876,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c75c0178df1f9ffb0800000000000000
-      internalID: -4613390272069319300
+      spriteID: 88c8a26d8a3d75480800000000000000
+      internalID: -8910420615628157816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_29
+      name: Tree_Brach_SS2_29
       rect:
         serializedVersion: 2
         x: 16
@@ -1044,14 +897,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e5ef2f6d5daaec0800000000000000
-      internalID: -3554793836679111125
+      spriteID: 3669da73660f5d250800000000000000
+      internalID: 5968941202960914019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_30
+      name: Tree_Brach_SS2_30
       rect:
         serializedVersion: 2
         x: 32
@@ -1065,14 +918,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7233ab41374daf7a0800000000000000
-      internalID: -6342523534463847641
+      spriteID: cfa2c5a7aeba59f30800000000000000
+      internalID: 4581757219482905340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_31
+      name: Tree_Brach_SS2_31
       rect:
         serializedVersion: 2
         x: 48
@@ -1086,14 +939,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c334fdcde67d62d60800000000000000
-      internalID: 7865210670401143612
+      spriteID: 1b153f2447edca2c0800000000000000
+      internalID: -4418912543436484175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_32
+      name: Tree_Brach_SS2_32
       rect:
         serializedVersion: 2
         x: 64
@@ -1107,14 +960,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50771b26e7ea2b980800000000000000
-      internalID: -8524559286814017787
+      spriteID: 7a3b896ba2a7d9f30800000000000000
+      internalID: 4583954319603708839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_33
+      name: Tree_Brach_SS2_33
       rect:
         serializedVersion: 2
         x: 80
@@ -1128,14 +981,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 568588d0203b8d5c0800000000000000
-      internalID: -4190402631869900699
+      spriteID: 8e9004f8e78791960800000000000000
+      internalID: 7573216733364750824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_34
+      name: Tree_Brach_SS2_34
       rect:
         serializedVersion: 2
         x: 96
@@ -1149,14 +1002,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf940cb07d541260800000000000000
-      internalID: 7067376454023290802
+      spriteID: 5079bd6e9e6ade730800000000000000
+      internalID: 4030060765097203461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_35
+      name: Tree_Brach_SS2_35
       rect:
         serializedVersion: 2
         x: 0
@@ -1170,14 +1023,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be857d412798c7c0800000000000000
-      internalID: -4050821695530496330
+      spriteID: a661f0c1325fc8f60800000000000000
+      internalID: 8038068966092904042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_36
+      name: Tree_Brach_SS2_36
       rect:
         serializedVersion: 2
         x: 16
@@ -1191,14 +1044,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c40b4672041208060800000000000000
-      internalID: 6953594384082579532
+      spriteID: 025783f4e987fd5b0800000000000000
+      internalID: -5341418011708852960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_37
+      name: Tree_Brach_SS2_37
       rect:
         serializedVersion: 2
         x: 32
@@ -1212,14 +1065,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f6ede432121eacb0800000000000000
-      internalID: -4850919879224727816
+      spriteID: a8fb2e7f9d9e50dd0800000000000000
+      internalID: -2520351294067916918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_38
+      name: Tree_Brach_SS2_38
       rect:
         serializedVersion: 2
         x: 48
@@ -1233,14 +1086,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1627188f1585c720800000000000000
-      internalID: 2865843108364887578
+      spriteID: a8ed313ea7050bcb0800000000000000
+      internalID: -4850288309952061814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_39
+      name: Tree_Brach_SS2_39
       rect:
         serializedVersion: 2
         x: 64
@@ -1254,14 +1107,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52ad076966688dec0800000000000000
-      internalID: -3541933331758130651
+      spriteID: f8fbde74b0986c0c0800000000000000
+      internalID: -4555803291494269041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_40
+      name: Tree_Brach_SS2_40
       rect:
         serializedVersion: 2
         x: 80
@@ -1275,14 +1128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1485b8ce11addf790800000000000000
-      internalID: -7494594434356783039
+      spriteID: 2fd251b6c9709f670800000000000000
+      internalID: 8572891734069292530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_41
+      name: Tree_Brach_SS2_41
       rect:
         serializedVersion: 2
         x: 96
@@ -1296,14 +1149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 798614322d2e75820800000000000000
-      internalID: 2907041476653443223
+      spriteID: 980decf9499d47050800000000000000
+      internalID: 5797497852692189321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_42
+      name: Tree_Brach_SS2_42
       rect:
         serializedVersion: 2
         x: 0
@@ -1317,14 +1170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e9e3b950dfe1c90800000000000000
-      internalID: -7197036953970237794
+      spriteID: 9ed263f1661f45da0800000000000000
+      internalID: -5956870986191720983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_43
+      name: Tree_Brach_SS2_43
       rect:
         serializedVersion: 2
         x: 16
@@ -1338,14 +1191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a1b8d52bf2e4570800000000000000
-      internalID: 8452745993741081178
+      spriteID: 9af03f5d6782558b0800000000000000
+      internalID: -5164176906849677399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_44
+      name: Tree_Brach_SS2_44
       rect:
         serializedVersion: 2
         x: 32
@@ -1359,14 +1212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e2d078bfe8bb920800000000000000
-      internalID: 3007154387153661496
+      spriteID: 60be27851a0e64ce0800000000000000
+      internalID: -1421201648810530042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_45
+      name: Tree_Brach_SS2_45
       rect:
         serializedVersion: 2
         x: 48
@@ -1380,14 +1233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dc0b9e0f90e75d60800000000000000
-      internalID: 7879013046857436372
+      spriteID: 4d75a87168135ebe0800000000000000
+      internalID: -1448697253139425324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_46
+      name: Tree_Brach_SS2_46
       rect:
         serializedVersion: 2
         x: 64
@@ -1401,14 +1254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3d18ea7d51d929f0800000000000000
-      internalID: -492632484796162758
+      spriteID: a80f00ba0b609bc10800000000000000
+      internalID: 2069692859606429834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_47
+      name: Tree_Brach_SS2_47
       rect:
         serializedVersion: 2
         x: 80
@@ -1422,14 +1275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65c0745952dd1fa0800000000000000
-      internalID: -5828271061636954769
+      spriteID: 7421b97d31ab59560800000000000000
+      internalID: 7319961363745018439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Brach_SS_48
+      name: Tree_Brach_SS2_48
       rect:
         serializedVersion: 2
         x: 96
@@ -1443,8 +1296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c284a4fcb0bff9ec0800000000000000
-      internalID: -3557849152458438612
+      spriteID: 07db0a02ac723dd10800000000000000
+      internalID: 2149105196270140784
       vertices: []
       indices: 
       edges: []
@@ -1452,7 +1305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e3d1bc13000bb104d89270521ec6eead
+    spriteID: 6c1bd0e8e79129f47b56e0033140a72f
     internalID: 0
     vertices: []
     indices: 

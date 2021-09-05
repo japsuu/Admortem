@@ -19,7 +19,7 @@ public class AutoRuleTile : ScriptableObject
 {
     [SerializeField] private List<Texture2D> SpriteSheets;
     [SerializeField] private JoiningRuleTile RuleTileTemplate;
-    [SerializeField] private bool IsRandomNotAnimated;
+    [SerializeField] private RuleTile.TilingRuleOutput.OutputSprite OutputType;
     
     private JoiningRuleTile ruleTileTemplate_Default;
 
@@ -66,10 +66,7 @@ public class AutoRuleTile : ScriptableObject
         {
             if (SpriteSheets.Count > 1)
             {
-                _new.m_TilingRules[ruleIndex].m_Output = RuleTile.TilingRuleOutput.OutputSprite.Animation;
-                
-                if(IsRandomNotAnimated)
-                    _new.m_TilingRules[ruleIndex].m_Output = RuleTile.TilingRuleOutput.OutputSprite.Random;
+                _new.m_TilingRules[ruleIndex].m_Output = OutputType;
             }
 
             // Initialize a array for all the animation sprites

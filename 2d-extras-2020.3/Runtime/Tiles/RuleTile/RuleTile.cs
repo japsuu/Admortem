@@ -20,6 +20,7 @@ namespace UnityEngine
         public sealed override Type m_NeighborType => typeof(T);
     }
 
+
     /// <summary>
     /// Generic visual tile for creating different tilesets like terrain, pipeline, random or animated tiles.
     /// </summary>
@@ -27,6 +28,8 @@ namespace UnityEngine
     [HelpURL("https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@latest/index.html?subfolder=/manual/RuleTile.html")]
     public class RuleTile : TileBase
     {
+        //public TileAnimation[] TileAnimations = new TileAnimation[1];
+        
         /// <summary>
         /// Returns the default Neighbor Rule Class type.
         /// </summary>
@@ -70,6 +73,10 @@ namespace UnityEngine
             /// The output Sprites for this Rule.
             /// </summary>
             public Sprite[] m_Sprites = new Sprite[1];
+            /// <summary>
+            /// The output Sprites for this Rule.
+            /// </summary>
+            public TileAnimation[] m_TileAnimations = new TileAnimation[1];
             /// <summary>
             /// The output GameObject for this Rule.
             /// </summary>
@@ -161,7 +168,11 @@ namespace UnityEngine
                 /// <summary>
                 /// A Sprite Animation will be output.
                 /// </summary>
-                Animation
+                Animation,
+                /// <summary>
+                /// A random animation will be output.
+                /// </summary>
+                RandomAnimation
             }
         }
 
@@ -202,7 +213,9 @@ namespace UnityEngine
                 rule.m_NeighborPositions = new List<Vector3Int>(m_NeighborPositions);
                 rule.m_RuleTransform = m_RuleTransform;
                 rule.m_Sprites = new Sprite[m_Sprites.Length];
+                rule.m_TileAnimations = new TileAnimation[m_TileAnimations.Length];
                 Array.Copy(m_Sprites, rule.m_Sprites, m_Sprites.Length);
+                Array.Copy(m_TileAnimations, rule.m_TileAnimations, m_TileAnimations.Length);
                 rule.m_GameObject = m_GameObject;
                 rule.m_MinAnimationSpeed = m_MinAnimationSpeed;
                 rule.m_MaxAnimationSpeed = m_MaxAnimationSpeed;
@@ -398,26 +411,45 @@ namespace UnityEngine
             foreach (TilingRule rule in m_TilingRules)
             {
                 Matrix4x4 transform = iden;
-                if (RuleMatches(rule, position, tilemap, ref transform))
+                if (!RuleMatches(rule, position, tilemap, ref transform)) continue;
+                
+                switch (rule.m_Output)
                 {
-                    switch (rule.m_Output)
+                    case TilingRuleOutput.OutputSprite.Single:
+                    case TilingRuleOutput.OutputSprite.Animation:
+                        tileData.sprite = rule.m_Sprites[0];
+                        break;
+                    case TilingRuleOutput.OutputSprite.Random:
+                        int index = Mathf.Clamp(Mathf.FloorToInt(GetPerlinValue(position, rule.m_PerlinScale, 100000f) * rule.m_Sprites.Length), 0, rule.m_Sprites.Length - 1);
+                        tileData.sprite = rule.m_Sprites[index];
+                        if (rule.m_RandomTransform != TilingRuleOutput.Transform.Fixed)
+                            transform = ApplyRandomTransform(rule.m_RandomTransform, transform, rule.m_PerlinScale, position);
+                        break;
+                    case TilingRuleOutput.OutputSprite.RandomAnimation:
                     {
-                        case TilingRule.OutputSprite.Single:
-                        case TilingRule.OutputSprite.Animation:
-                            tileData.sprite = rule.m_Sprites[0];
-                            break;
-                        case TilingRule.OutputSprite.Random:
-                            int index = Mathf.Clamp(Mathf.FloorToInt(GetPerlinValue(position, rule.m_PerlinScale, 100000f) * rule.m_Sprites.Length), 0, rule.m_Sprites.Length - 1);
-                            tileData.sprite = rule.m_Sprites[index];
-                            if (rule.m_RandomTransform != TilingRule.Transform.Fixed)
-                                transform = ApplyRandomTransform(rule.m_RandomTransform, transform, rule.m_PerlinScale, position);
-                            break;
+                        //TODO: Implement
+                        int animationIndex = Mathf.Clamp(Mathf.FloorToInt(GetPerlinValue(position, rule.m_PerlinScale, 100000f) * rule.m_TileAnimations.Length), 0, rule.m_Sprites.Length - 1);
+                        if (rule.m_TileAnimations[animationIndex].Frames != null && rule.m_TileAnimations[animationIndex].Frames.Length > 0)
+                        {
+                            rule.m_Sprites = rule.m_TileAnimations[animationIndex].Frames;
+                        }
+                        else
+                        {
+                            rule.m_Sprites = new Sprite[1];
+                        }
+                        tileData.sprite = rule.m_Sprites[0];
+                            
+                        if (rule.m_RandomTransform != TilingRuleOutput.Transform.Fixed)
+                            transform = ApplyRandomTransform(rule.m_RandomTransform, transform, rule.m_PerlinScale, position);
+
+                        //TileAnimations = rule.m_TileAnimations;
                     }
-                    tileData.transform = transform;
-                    tileData.gameObject = rule.m_GameObject;
-                    tileData.colliderType = rule.m_ColliderType;
-                    break;
+                        break;
                 }
+                tileData.transform = transform;
+                tileData.gameObject = rule.m_GameObject;
+                tileData.colliderType = rule.m_ColliderType;
+                break;
             }
         }
 
@@ -535,12 +567,13 @@ namespace UnityEngine
             var iden = Matrix4x4.identity;
             foreach (TilingRule rule in m_TilingRules)
             {
-                if (rule.m_Output == TilingRule.OutputSprite.Animation)
+                if (rule.m_Output == TilingRuleOutput.OutputSprite.Animation || rule.m_Output == TilingRuleOutput.OutputSprite.RandomAnimation)
                 {
                     Matrix4x4 transform = iden;
                     if (RuleMatches(rule, position, tilemap, ref transform))
                     {
                         tileAnimationData.animatedSprites = rule.m_Sprites;
+                        //TODO: Create varying animationSpeed here?
                         tileAnimationData.animationSpeed = Random.Range( rule.m_MinAnimationSpeed, rule.m_MaxAnimationSpeed);
                         return true;
                     }
