@@ -875,9 +875,18 @@ namespace UnityEditor
                     {
                         serializedObject.ApplyModifiedProperties();
                     }
+                    //TODO: Set the value of the TileAnimation reference, not the direct RuleTile m_Min/Max speed.
+
+
+                    if (tilingRule.m_TileAnimations.Length > j)
+                    {
+                        if (tilingRule.m_TileAnimations[j].MinSpeed == 0) tilingRule.m_TileAnimations[j].MinSpeed = 1;
+                        if (tilingRule.m_TileAnimations[j].MaxSpeed == 0) tilingRule.m_TileAnimations[j].MaxSpeed = 1;
+                        
+                        tilingRule.m_TileAnimations[j].MinSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 10, y, 30, k_SingleLineHeight), tilingRule.m_TileAnimations[j].MinSpeed);
+                        tilingRule.m_TileAnimations[j].MaxSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 42, y, 30, k_SingleLineHeight), tilingRule.m_TileAnimations[j].MaxSpeed);
+                    }
                     
-                    tilingRule.m_MinAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 10, y, 30, k_SingleLineHeight), 1);
-                    tilingRule.m_MaxAnimationSpeed = EditorGUI.FloatField(new Rect(rect.xMax + 42, y, 30, k_SingleLineHeight), 1);
                     
                     if(frames.isExpanded)
                     {

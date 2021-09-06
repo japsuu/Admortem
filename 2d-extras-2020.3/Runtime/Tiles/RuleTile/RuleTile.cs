@@ -28,8 +28,6 @@ namespace UnityEngine
     [HelpURL("https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@latest/index.html?subfolder=/manual/RuleTile.html")]
     public class RuleTile : TileBase
     {
-        //public TileAnimation[] TileAnimations = new TileAnimation[1];
-        
         /// <summary>
         /// Returns the default Neighbor Rule Class type.
         /// </summary>
@@ -432,6 +430,8 @@ namespace UnityEngine
                         if (rule.m_TileAnimations[animationIndex].Frames != null && rule.m_TileAnimations[animationIndex].Frames.Length > 0)
                         {
                             rule.m_Sprites = rule.m_TileAnimations[animationIndex].Frames;
+                            rule.m_MinAnimationSpeed = rule.m_TileAnimations[animationIndex].MinSpeed;
+                            rule.m_MaxAnimationSpeed = rule.m_TileAnimations[animationIndex].MaxSpeed;
                         }
                         else
                         {

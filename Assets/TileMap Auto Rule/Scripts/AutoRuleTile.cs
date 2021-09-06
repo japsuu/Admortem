@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEditor;
@@ -12,6 +11,7 @@ using UnityEditor;
 // https://brullalex.itch.io/
 // ----------------------------------------------------------------------------
 
+//TODO: Setup all the rules also for using RandomAnimation (also add sprites to TileAnimations array!)
 
 [ExecuteInEditMode]
 [CreateAssetMenu(fileName = "New Auto Rule Tile", menuName = "Tiles/Auto Rule Tile")]
@@ -47,16 +47,17 @@ public class AutoRuleTile : ScriptableObject
         JoiningRuleTile _new = CreateInstance<JoiningRuleTile>();
         EditorUtility.CopySerialized(RuleTileTemplate, _new);
 
-        // Get all the sprites on all the spriteSheets
-        List<Sprite[]> sprites = new List<Sprite[]>();
+        // List of all the spriteSheets as Sprite[]:s
+        List<Sprite[]> spriteSheets = new List<Sprite[]>();
+        
         for (int i = 0; i < SpriteSheets.Count; i++)
         {
-            sprites.Add(new Sprite[SpriteSheets.Count]);
+            spriteSheets.Add(new Sprite[SpriteSheets.Count]);
             string path = AssetDatabase.GetAssetPath(SpriteSheets[i]);
-            sprites[i] = AssetDatabase.LoadAllAssetsAtPath(path).OfType<Sprite>().ToArray();
+            spriteSheets[i] = AssetDatabase.LoadAllAssetsAtPath(path).OfType<Sprite>().ToArray();
         }
 
-        if (sprites[0].Length != RuleTileTemplate.m_TilingRules.Count)
+        if (spriteSheets[0].Length != RuleTileTemplate.m_TilingRules.Count)
         {
             Debug.LogWarning("The Spritesheet doesn't have the same number of sprites than the Rule Tile template has rules.");
         }
@@ -75,11 +76,13 @@ public class AutoRuleTile : ScriptableObject
             // Add all the animation sprites to the m_Sprites array
             for (int animSheetIndex = 0; animSheetIndex < SpriteSheets.Count; animSheetIndex++)
             {
-                _new.m_TilingRules[ruleIndex].m_Sprites[animSheetIndex] = sprites[animSheetIndex][ruleIndex];
+                _new.m_TilingRules[ruleIndex].m_Sprites[animSheetIndex] = spriteSheets[animSheetIndex][ruleIndex];
+                
+                Debug.Log("Rule Index " + ruleIndex + " is now " + spriteSheets[animSheetIndex][ruleIndex] + " (" + animSheetIndex + ")");
             }
             
             // Set the default sprite
-            _new.m_DefaultSprite = sprites[0][24];
+            _new.m_DefaultSprite = spriteSheets[0][24];
         }
 
         // Replace this Asset with the new one.
