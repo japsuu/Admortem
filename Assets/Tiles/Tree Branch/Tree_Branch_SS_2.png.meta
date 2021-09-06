@@ -1,0 +1,1467 @@
+fileFormatVersion: 2
+guid: a9431553bba95e041a5f07a1a9717cd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5996769952875643704
+    second: Tree_Brach_SS_2_0
+  - first:
+      213: -8932319786970293347
+    second: Tree_Brach_SS_2_1
+  - first:
+      213: 2565054768150434071
+    second: Tree_Brach_SS_2_2
+  - first:
+      213: -6442259325799434510
+    second: Tree_Brach_SS_2_3
+  - first:
+      213: -4823338082970170256
+    second: Tree_Brach_SS_2_4
+  - first:
+      213: 3608838766157757607
+    second: Tree_Brach_SS_2_5
+  - first:
+      213: -2107201106652257358
+    second: Tree_Brach_SS_2_6
+  - first:
+      213: -1181006167760075501
+    second: Tree_Brach_SS_2_7
+  - first:
+      213: -7851242811510241632
+    second: Tree_Brach_SS_2_8
+  - first:
+      213: 2304528530744983838
+    second: Tree_Brach_SS_2_9
+  - first:
+      213: -2420003726865704728
+    second: Tree_Brach_SS_2_10
+  - first:
+      213: -3393354840216313342
+    second: Tree_Brach_SS_2_11
+  - first:
+      213: 5294983606800203866
+    second: Tree_Brach_SS_2_12
+  - first:
+      213: 4897251227260478950
+    second: Tree_Brach_SS_2_13
+  - first:
+      213: -1810705625929445457
+    second: Tree_Brach_SS_2_14
+  - first:
+      213: -1120874433728006701
+    second: Tree_Brach_SS_2_15
+  - first:
+      213: -613032327753132605
+    second: Tree_Brach_SS_2_16
+  - first:
+      213: 924250008615131258
+    second: Tree_Brach_SS_2_17
+  - first:
+      213: -2845432463287708059
+    second: Tree_Brach_SS_2_18
+  - first:
+      213: 5154349244255581820
+    second: Tree_Brach_SS_2_19
+  - first:
+      213: 8867140858716908247
+    second: Tree_Brach_SS_2_20
+  - first:
+      213: -8823913335406416544
+    second: Tree_Brach_SS_2_21
+  - first:
+      213: 3964099301756958712
+    second: Tree_Brach_SS_2_22
+  - first:
+      213: 6723417469901615201
+    second: Tree_Brach_SS_2_23
+  - first:
+      213: 6408507120793475094
+    second: Tree_Brach_SS_2_24
+  - first:
+      213: 8761018949708999567
+    second: Tree_Brach_SS_2_25
+  - first:
+      213: -6763118854386469839
+    second: Tree_Brach_SS_2_26
+  - first:
+      213: -7846151818171820948
+    second: Tree_Brach_SS_2_27
+  - first:
+      213: 7517040346808169722
+    second: Tree_Brach_SS_2_28
+  - first:
+      213: 42759120778632023
+    second: Tree_Brach_SS_2_29
+  - first:
+      213: 3424496691442830823
+    second: Tree_Brach_SS_2_30
+  - first:
+      213: 8145991949683758163
+    second: Tree_Brach_SS_2_31
+  - first:
+      213: 8704263872936806930
+    second: Tree_Brach_SS_2_32
+  - first:
+      213: 769172785876441996
+    second: Tree_Brach_SS_2_33
+  - first:
+      213: -3326484684981730903
+    second: Tree_Brach_SS_2_34
+  - first:
+      213: -5257873709859322001
+    second: Tree_Brach_SS_2_35
+  - first:
+      213: -366922277865523903
+    second: Tree_Brach_SS_2_36
+  - first:
+      213: 257358469444532305
+    second: Tree_Brach_SS_2_37
+  - first:
+      213: -6953240235923423622
+    second: Tree_Brach_SS_2_38
+  - first:
+      213: -4207433581971486229
+    second: Tree_Brach_SS_2_39
+  - first:
+      213: 3115116288302784651
+    second: Tree_Brach_SS_2_40
+  - first:
+      213: 3056959108318304596
+    second: Tree_Brach_SS_2_41
+  - first:
+      213: 2227551970628059658
+    second: Tree_Brach_SS_2_42
+  - first:
+      213: -1491464942429429180
+    second: Tree_Brach_SS_2_43
+  - first:
+      213: -660682914209278824
+    second: Tree_Brach_SS_2_44
+  - first:
+      213: -4825121315271775239
+    second: Tree_Brach_SS_2_45
+  - first:
+      213: 6127826399035855751
+    second: Tree_Brach_SS_2_46
+  - first:
+      213: -979180804648569171
+    second: Tree_Brach_SS_2_47
+  - first:
+      213: 4041736721895108272
+    second: Tree_Brach_SS_2_48
+  - first:
+      213: -8174751827719376858
+    second: Tree_Branch_SS_2_0
+  - first:
+      213: -2573059862619041410
+    second: Tree_Branch_SS_2_1
+  - first:
+      213: -5746768129506043817
+    second: Tree_Branch_SS_2_2
+  - first:
+      213: 5623731402673702039
+    second: Tree_Branch_SS_2_3
+  - first:
+      213: -8776647500458646308
+    second: Tree_Branch_SS_2_4
+  - first:
+      213: -4027032281123906134
+    second: Tree_Branch_SS_2_5
+  - first:
+      213: -6765987779223696902
+    second: Tree_Branch_SS_2_6
+  - first:
+      213: 5111087992450238812
+    second: Tree_Branch_SS_2_7
+  - first:
+      213: 1428247526731705115
+    second: Tree_Branch_SS_2_8
+  - first:
+      213: 5044740572769755207
+    second: Tree_Branch_SS_2_9
+  - first:
+      213: -424737822357489021
+    second: Tree_Branch_SS_2_10
+  - first:
+      213: -8959130385454235959
+    second: Tree_Branch_SS_2_11
+  - first:
+      213: 1368114678100187099
+    second: Tree_Branch_SS_2_12
+  - first:
+      213: -8767011706347114226
+    second: Tree_Branch_SS_2_13
+  - first:
+      213: -4190607984564822494
+    second: Tree_Branch_SS_2_14
+  - first:
+      213: -2786427786163298995
+    second: Tree_Branch_SS_2_15
+  - first:
+      213: -698578558925164796
+    second: Tree_Branch_SS_2_16
+  - first:
+      213: -2408583363227434687
+    second: Tree_Branch_SS_2_17
+  - first:
+      213: 2688347658747445571
+    second: Tree_Branch_SS_2_18
+  - first:
+      213: -6219680287424460621
+    second: Tree_Branch_SS_2_19
+  - first:
+      213: 8813669032755950956
+    second: Tree_Branch_SS_2_20
+  - first:
+      213: -6726417691993822850
+    second: Tree_Branch_SS_2_21
+  - first:
+      213: -6679745119461897775
+    second: Tree_Branch_SS_2_22
+  - first:
+      213: 3225420389435176757
+    second: Tree_Branch_SS_2_23
+  - first:
+      213: -8501239503498512295
+    second: Tree_Branch_SS_2_24
+  - first:
+      213: 7505056094213274171
+    second: Tree_Branch_SS_2_25
+  - first:
+      213: -4179193460325317250
+    second: Tree_Branch_SS_2_26
+  - first:
+      213: 1451706335430743039
+    second: Tree_Branch_SS_2_27
+  - first:
+      213: 1397045815205035735
+    second: Tree_Branch_SS_2_28
+  - first:
+      213: -7601123373091982258
+    second: Tree_Branch_SS_2_29
+  - first:
+      213: -8383822645682584049
+    second: Tree_Branch_SS_2_30
+  - first:
+      213: 2719792452813716021
+    second: Tree_Branch_SS_2_31
+  - first:
+      213: 7761085643624573815
+    second: Tree_Branch_SS_2_32
+  - first:
+      213: 3853140487991127384
+    second: Tree_Branch_SS_2_33
+  - first:
+      213: 3589965191252821713
+    second: Tree_Branch_SS_2_34
+  - first:
+      213: 7537472021628512531
+    second: Tree_Branch_SS_2_35
+  - first:
+      213: 6252448618052184281
+    second: Tree_Branch_SS_2_36
+  - first:
+      213: -3006796696722574023
+    second: Tree_Branch_SS_2_37
+  - first:
+      213: 2583120926676270732
+    second: Tree_Branch_SS_2_38
+  - first:
+      213: -193175611731230489
+    second: Tree_Branch_SS_2_39
+  - first:
+      213: -2374780714276954665
+    second: Tree_Branch_SS_2_40
+  - first:
+      213: -4430704063030770833
+    second: Tree_Branch_SS_2_41
+  - first:
+      213: -2523282239788569027
+    second: Tree_Branch_SS_2_42
+  - first:
+      213: -2763214956544012318
+    second: Tree_Branch_SS_2_43
+  - first:
+      213: 7759767787021374345
+    second: Tree_Branch_SS_2_44
+  - first:
+      213: -2293415990020688312
+    second: Tree_Branch_SS_2_45
+  - first:
+      213: -7808244162239422872
+    second: Tree_Branch_SS_2_46
+  - first:
+      213: -7549431300255857807
+    second: Tree_Branch_SS_2_47
+  - first:
+      213: 6816994485460672942
+    second: Tree_Branch_SS_2_48
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620bfcd36827d8e80800000000000000
+      internalID: -8174751827719376858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71d6c600b7aa4cd0800000000000000
+      internalID: -2573059862619041410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758914a75d06f30b0800000000000000
+      internalID: -5746768129506043817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79443983ae18b0e40800000000000000
+      internalID: 5623731402673702039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4a7585995133680800000000000000
+      internalID: -8776647500458646308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad1498f97b1d18c0800000000000000
+      internalID: -4027032281123906134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9ccb866f16a12a0800000000000000
+      internalID: -6765987779223696902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59c2cd037b3ee640800000000000000
+      internalID: 5111087992450238812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b6c22fe8722d310800000000000000
+      internalID: 1428247526731705115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74021ff92d4820640800000000000000
+      internalID: 5044740572769755207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a75bf63370b1af0800000000000000
+      internalID: -424737822357489021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce7796c166caa380800000000000000
+      internalID: -8959130385454235959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7d8281d058cf210800000000000000
+      internalID: 1368114678100187099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e013d7d7d41555680800000000000000
+      internalID: -8767011706347114226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e1917ad38f7d5c0800000000000000
+      internalID: -4190607984564822494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d557d01be9459d0800000000000000
+      internalID: -2786427786163298995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40faf8b70862e46f0800000000000000
+      internalID: -698578558925164796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141c9ee313ef29ed0800000000000000
+      internalID: -2408583363227434687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3410560c3fdee4520800000000000000
+      internalID: 2688347658747445571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8c09b5bb14fa9a0800000000000000
+      internalID: -6219680287424460621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c657749d941705a70800000000000000
+      internalID: 8813669032755950956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e792ec94fb6f6a2a0800000000000000
+      internalID: -6726417691993822850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d903546437cc43a0800000000000000
+      internalID: -6679745119461897775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537f59351cef2cc20800000000000000
+      internalID: 3225420389435176757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958f37b86b7850a80800000000000000
+      internalID: -8501239503498512295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a76f211c0572860800000000000000
+      internalID: 7505056094213274171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e758cada0b58006c0800000000000000
+      internalID: -4179193460325317250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff39889783f752410800000000000000
+      internalID: 1451706335430743039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7defd3e54cd436310800000000000000
+      internalID: 1397045815205035735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44feec8092638690800000000000000
+      internalID: -7601123373091982258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06c63029bda6ab80800000000000000
+      internalID: -8383822645682584049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53affb463d4aeb520800000000000000
+      internalID: 2719792452813716021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b60abd54ae4bb60800000000000000
+      internalID: 7761085643624573815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85de268ebda197530800000000000000
+      internalID: 3853140487991127384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d644ac225e12d130800000000000000
+      internalID: 3589965191252821713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319ec915eda7a9860800000000000000
+      internalID: 7537472021628512531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8e16724e825c650800000000000000
+      internalID: 6252448618052184281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9357804c556b546d0800000000000000
+      internalID: -3006796696722574023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8eba6efbc619d320800000000000000
+      internalID: 2583120926676270732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0cd7bfdc3b15df0800000000000000
+      internalID: -193175611731230489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddd212c5851b0fd0800000000000000
+      internalID: -2374780714276954665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63cb2a212af282c0800000000000000
+      internalID: -4430704063030770833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ea95dfb208bfcd0800000000000000
+      internalID: -2523282239788569027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efc52d13a617a9d0800000000000000
+      internalID: -2763214956544012318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9839de470bb30bb60800000000000000
+      internalID: 7759767787021374345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846bd90ee462c20e0800000000000000
+      internalID: -2293415990020688312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e9336ed4b83a390800000000000000
+      internalID: -7808244162239422872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173c8042b380b3790800000000000000
+      internalID: -7549431300255857807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Branch_SS_2_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea12ea5dd54da9e50800000000000000
+      internalID: 6816994485460672942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6c303e126f1bc454381f23bd8284ef8d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

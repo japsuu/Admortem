@@ -23,7 +23,8 @@ public class JoiningRuleTile : RuleTile<JoiningRuleTile.Neighbor>
     public override bool RuleMatch(int neighbor, TileBase tile)
     {
         if (tile != null && joinAllTiles)   //BUG: Fix this ASAP!
-            return true;
+            if(tile != this)
+                return true;
         
         return neighbor switch
         {
