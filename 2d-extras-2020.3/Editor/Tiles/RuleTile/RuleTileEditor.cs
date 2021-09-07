@@ -30,6 +30,9 @@ namespace UnityEditor
         private const string s_MirrorXY = "iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4yMfEgaZUAAAHkSURBVDhPrVJLSwJRFJ4cdXwjPlrVJly1kB62cpEguElXKgYKIpaC+EIEEfGxLqI/UES1KaJlEdGmRY9ltCsIWrUJatGm0eZO3xkHIsJdH3zce+ec75z5zr3cf2MMmLdYLA/BYFA2mUyPOPvwnR+GR4PXaDQLLpfrKpVKSb1eT6bV6XTeocAS4sIw7S804BzEZ4IgsGq1ykhcr9dlj8czwPdbxJdBMyX/As/zLiz74Ar2J9lsVulcKpUYut5DnEbsHFwEx8AhtFqtGViD6BOc1ul0B5lMRhGXy2Wm1+ufkBOE/2fsL1FsQpXCiCAcQiAlk0kJRZjf7+9TRxI3Gg0WCoW+IpGISHHERBS5UKUch8n2K5WK3O125VqtpqydTkdZie12W261WjIVo73b7RZVKccZDIZ1q9XaT6fTLB6PD9BFKhQKjITFYpGFw+FBNBpVOgcCARH516pUGZYZXk5R4B3efLBxDM9f1CkWi/WR3ICtGVh6Rd4NPE+p0iEgmkSRLRoMEjYhHpA4kUiIOO8iZRU8AmnadK2/QOOfhnjPZrO95fN5Zdq5XE5yOBwvuKoNxGfBkQ8FzXkPprnj9Xrfm82mDI8fsLON3x5H/Od+RwHdLfDds9vtn0aj8QoF6QH9JzjuG3acpxmu1RgPAAAAAElFTkSuQmCC";
         private const string s_Rotated = "iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC41ZYUyZQAAAHdJREFUOE+djssNwCAMQxmIFdgx+2S4Vj4YxWlQgcOT8nuG5u5C732Sd3lfLlmPMR4QhXgrTQaimUlA3EtD+CJlBuQ7aUAUMjEAv9gWCQNEPhHJUkYfZ1kEpcxDzioRzGIlr0Qwi0r+Q5rTgM+AAVcygHgt7+HtBZs/2QVWP8ahAAAAAElFTkSuQmCC";
         private const string s_Fixed = "iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAA50lEQVQ4T51Ruw6CQBCkwBYKWkIgQAs9gfgCvgb4BML/qWBM9Bdo9QPIuVOQ3JIzosVkc7Mzty9NCPE3lORaKMm1YA/LsnTXdbdhGJ6iKHoVRTEi+r4/OI6zN01Tl/XM7HneLsuyW13XU9u2ous6gYh3kiR327YPsp6ZgyDom6aZYFqiqqqJ8mdZz8xoca64BHjkZT0zY0aVcQbysp6Z4zj+Vvkp65mZttxjOSozdkEzD7KemekcxzRNHxDOHSDiQ/DIy3pmpjtuSJBThStGKMtyRKSOLnSm3DCMz3f+FUpyLZTkOgjtDSWORSDbpbmNAAAAAElFTkSuQmCC";
+        
+        private const string s_ThisOrFriend = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFJJREFUOI1jYKAQMKILKNur/yek6e7Bm3B9LNgUCNcq4tT8tvk+Cp+JkG2EAFYX4LING6CtC7CFxeALA7wGMDCgxjk2QLEXhoEBWAORmNCnGgAAaDkTjXffnhkAAAAASUVORK5CYII=";
+        private const string s_Friend = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAE9JREFUOI1jYKAQMKILmJoz/Cek6fRJhD4WbAr2n8Ct2dEClc9EyDZCAKsLcNmGDdDWBdjCYvCFAV4DGBhQ4xwboNgLw8AArIFITOhTDQAAIlIKKIdobH4AAAAASUVORK5CYII=";
 
         private static Texture2D[] s_Arrows;
 
@@ -42,7 +45,7 @@ namespace UnityEditor
             {
                 if (s_Arrows == null)
                 {
-                    s_Arrows = new Texture2D[10];
+                    s_Arrows = new Texture2D[12];
                     s_Arrows[0] = Base64ToTexture(s_Arrow0);
                     s_Arrows[1] = Base64ToTexture(s_Arrow1);
                     s_Arrows[2] = Base64ToTexture(s_Arrow2);
@@ -52,6 +55,8 @@ namespace UnityEditor
                     s_Arrows[7] = Base64ToTexture(s_Arrow7);
                     s_Arrows[8] = Base64ToTexture(s_Arrow8);
                     s_Arrows[9] = Base64ToTexture(s_XIconString);
+                    s_Arrows[10] = Base64ToTexture(s_ThisOrFriend);
+                    s_Arrows[11] = Base64ToTexture(s_Friend);
                 }
                 return s_Arrows;
             }
@@ -537,16 +542,24 @@ namespace UnityEditor
         {
             switch (neighbor)
             {
-                case RuleTile.TilingRule.Neighbor.This:
+                case RuleTile.TilingRuleOutput.Neighbor.This:
                     GUI.DrawTexture(rect, arrows[GetArrowIndex(position)]);
                     break;
-                case RuleTile.TilingRule.Neighbor.NotThis:
+                case RuleTile.TilingRuleOutput.Neighbor.NotThis:
                     GUI.DrawTexture(rect, arrows[9]);
                     break;
+                case 3:
+                    GUI.DrawTexture(rect, arrows[10]);  //TODO: Get the values from JoiningRuleTile.cs
+                    break;
+                case 4:
+                    GUI.DrawTexture(rect, arrows[11]);
+                    break;
                 default:
-                    var style = new GUIStyle();
-                    style.alignment = TextAnchor.MiddleCenter;
-                    style.fontSize = 10;
+                    GUIStyle style = new GUIStyle
+                    {
+                        alignment = TextAnchor.MiddleCenter,
+                        fontSize = 10
+                    };
                     GUI.Label(rect, neighbor.ToString(), style);
                     break;
             }

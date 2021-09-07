@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.Serialization;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -22,4 +23,11 @@ public class ItemHolder : MonoBehaviour
             BlockDictionary.Add(block.Tile, block);
         }
     }
+}
+
+public enum BlockType
+{
+    Filler,
+    Ore,
+    Treasure,
 }

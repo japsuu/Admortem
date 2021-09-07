@@ -12,6 +12,9 @@ public class BuildingController : MonoBehaviour
     public Tilemap shatterOverlayMap;
     public Tilemap ghostsMap;
 
+    /// <summary>
+    /// First is the least shattered, last is the most shattered.
+    /// </summary>
     [SerializeField] private RuleTile[] shatterTiles;
     
     public int breakSpeed = 10;
@@ -171,38 +174,36 @@ public class BuildingController : MonoBehaviour
 
     private RuleTile GetShatterTile(Vector3Int tilePos)
     {
-        int timesUntilBreaking = 9999;
+        int shatterIndex = -1;
         if (GetSelectedTilemap() == foregroundMap)
         {
             Block block = WorldManager.Instance.GetBlockBundleAt(tilePos).GetForegroundBlock();
-            
-            if(block != null)
-                timesUntilBreaking = Mathf.CeilToInt(block.Durability / (float)blockDamageAmount);
+
+            if (block != null)
+            {
+                float original = ItemHolder.BlockDictionary[block.Tile].Durability;
+                float current = block.Durability;
+                shatterIndex = Mathf.RoundToInt(current.Remap(0, original, 0, shatterTiles.Length));
+            }
         }
         else
         {
             Block block = WorldManager.Instance.GetBlockBundleAt(tilePos).GetBackgroundBlock();
             
-            if(block != null)
-                timesUntilBreaking = Mathf.CeilToInt(block.Durability / (float)blockDamageAmount);
-        }
-        Debug.Log("Times until break is: " + timesUntilBreaking);
-        
-
-        if (timesUntilBreaking > shatterTiles.Length)
-        {
-            Debug.Log("Selecting sprite: 0.");
-            return shatterTiles[0];
+            if (block != null)
+            {
+                float original = ItemHolder.BlockDictionary[block.Tile].Durability;
+                float current = block.Durability;
+                shatterIndex = Mathf.RoundToInt(current.Remap(0, original, 0, shatterTiles.Length));
+            }
         }
         
-        Debug.Log("Selecting sprite: " + (shatterTiles.Length - 2 - timesUntilBreaking));
-        return shatterTiles[shatterTiles.Length - 2 - timesUntilBreaking];
+        Debug.Log("Selecting sprite: " + shatterIndex);
+        return shatterTiles[shatterIndex];
     }
 
     private void OnDrawGizmos()
     {
-        
-        
         if (!Settings.DebugVisualsEnabled) return;
         
         if (PlayerMovementController.Instance != null)

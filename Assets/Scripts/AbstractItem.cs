@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -8,10 +6,10 @@ public class AbstractItem
 {
     public int ID;
     public GameObject PickupPrefab;
-    public int Amount;
     public bool IsStackable;
-
-    [HideInInspector] public TextMeshProUGUI AmountText = null;
+    
+    [HideInInspector] public int Amount;
+    [HideInInspector] public TextMeshProUGUI AmountText;
     [HideInInspector] public int InventorySlotIndex = -1;
     [HideInInspector] public Sprite InventorySprite;
 

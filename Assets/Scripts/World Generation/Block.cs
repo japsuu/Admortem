@@ -7,8 +7,6 @@ using UnityEngine.Tilemaps;
 [System.Serializable]
 public class Block : AbstractItem
 {
-    //TODO: Only expose a public Texture2D for the textureSheet, and use the autoruletile to generate a ruletile for it.
-    
     public RuleTile Tile;
 
     public int Durability;

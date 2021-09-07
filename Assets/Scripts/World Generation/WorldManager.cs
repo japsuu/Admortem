@@ -52,7 +52,7 @@ public class WorldManager : MonoBehaviour
             {
                 if (worldBundle[x, y] == null) continue;
 
-                Debug.Log("Cell pos: " + new Vector2(x, y));
+                //Debug.Log("Cell pos: " + new Vector2(x, y));
                 // Set the player SpawnPoint
                 //if (!spawnPointSet && x == halfWorldWidth)
                 //{
