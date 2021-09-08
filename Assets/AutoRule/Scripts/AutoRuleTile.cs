@@ -12,6 +12,7 @@ using UnityEditor;
 // ----------------------------------------------------------------------------
 
 //TODO: Setup all the rules also for using RandomAnimation (also add sprites to TileAnimations array!)
+//TODO: Change this system from lists of arrays to a single 2D-array!!!
 
 [ExecuteInEditMode]
 [CreateAssetMenu(fileName = "New Auto Rule Tile", menuName = "Tiles/Auto Rule Tile")]
@@ -37,6 +38,7 @@ public class AutoRuleTile : ScriptableObject
     {
         // Load all the selected textures to the sprite sheets array.
         List<Texture2D> selections = Selection.objects.OfType<Texture2D>().ToList();
+        
         SpriteSheets = selections;
     }
 

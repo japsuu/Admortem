@@ -461,7 +461,17 @@ namespace UnityEditor
             tile.m_DefaultColliderType = (Tile.ColliderType)EditorGUILayout.EnumPopup(Styles.defaultCollider, tile.m_DefaultColliderType);
 
             DrawCustomFields(false);
+            
+            EditorGUILayout.Space(30);
 
+            EditorGUILayout.LabelField("Use settings below to switch rules.");
+            from = EditorGUILayout.IntPopup("From", from, tileRuleNames, tileRules);
+            to = EditorGUILayout.IntPopup("To", to, tileRuleNames, tileRules);
+            if (GUILayout.Button("Switch"))
+            {
+                SwitchAllRules();
+            }
+            
             EditorGUILayout.Space();
 
             if (m_ReorderableList != null)
@@ -469,6 +479,23 @@ namespace UnityEditor
 
             if (EditorGUI.EndChangeCheck())
                 SaveTile();
+        }
+        
+        private static int[] tileRules = new int[] { 0, 1, 2, 3, 4 };
+        private static string[] tileRuleNames = new string[] { "nothing", "This", "NotThis", "ThisOrFriend", "Friend" };
+    
+        private int from;
+        private int to;
+    
+        private void SwitchAllRules()
+        {
+            foreach (RuleTile.TilingRule rule in tile.m_TilingRules)
+            {
+                for (int i = 0; i < rule.m_Neighbors.Count; i++)
+                {
+                    if (rule.m_Neighbors[i] == from) rule.m_Neighbors[i] = to;
+                }
+            }
         }
 
         /// <summary>

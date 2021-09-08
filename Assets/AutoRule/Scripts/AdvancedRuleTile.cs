@@ -1,4 +1,5 @@
 using System.Linq;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
@@ -49,7 +50,7 @@ public class AdvancedRuleTile : RuleTile<AdvancedRuleTile.Neighbor>
             }
             case TilingRuleOutput.Neighbor.NotThis:
             {
-                return tile != this;
+                return tile != this && !HasFriendTile(tile);
             }
             case TilingRuleOutput.Neighbor.This:
             {

@@ -1,6 +1,6 @@
 {
   "dependencies": {
-	"com.popcron.gizmos": "https://github.com/popcron/gizmos.git",
+    "com.popcron.gizmos": "https://github.com/popcron/gizmos.git",
     "com.unity.2d.pixel-perfect": "4.0.1",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
@@ -14,6 +14,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.4.8",
     "com.unity.ugui": "1.0.0",
+    "io.tinu.asepriteimporter": "https://github.com/martinhodler/unity-aseprite-importer.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
