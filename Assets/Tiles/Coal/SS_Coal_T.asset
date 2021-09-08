@@ -1293,4 +1293,5 @@ MonoBehaviour:
   friendTiles:
   - {fileID: 11400000, guid: 5d30e2b9e01fb704cb8c6c79ba505eb2, type: 2}
   - {fileID: 11400000, guid: b0d0a5eb5ea54894a95790e3f3f6be9b, type: 2}
-  joinAllTiles: 0
+  alwaysJoinAllTiles: 0
+  alwaysJoinFriends: 0

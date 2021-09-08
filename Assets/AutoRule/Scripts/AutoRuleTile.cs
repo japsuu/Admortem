@@ -48,16 +48,25 @@ public class AutoRuleTile : ScriptableObject
         EditorUtility.CopySerialized(RuleTileTemplate, _new);
 
         // List of all the spriteSheets as Sprite[]:s
-        List<Sprite[]> spriteSheets = new List<Sprite[]>();
+        List<Sprite[]> sprites = new List<Sprite[]>();
         
         for (int i = 0; i < SpriteSheets.Count; i++)
         {
-            spriteSheets.Add(new Sprite[SpriteSheets.Count]);
+            sprites.Add(new Sprite[SpriteSheets.Count]);
             string path = AssetDatabase.GetAssetPath(SpriteSheets[i]);
-            spriteSheets[i] = AssetDatabase.LoadAllAssetsAtPath(path).OfType<Sprite>().ToArray();
+            sprites[i] = AssetDatabase.LoadAllAssetsAtPath(path).OfType<Sprite>().ToArray();
         }
 
-        if (spriteSheets[0].Length != RuleTileTemplate.m_TilingRules.Count)
+        string path1 = AssetDatabase.GetAssetPath(SpriteSheets[0]);
+        Debug.Log("Loading at path " + path1);
+        Sprite[] assets = AssetDatabase.LoadAllAssetsAtPath(path1).OfType<Sprite>().ToArray();
+        
+        foreach (var sprite in assets)
+        {
+            Debug.Log(sprite.name);
+        }
+
+        if (sprites[0].Length != RuleTileTemplate.m_TilingRules.Count)
         {
             Debug.LogWarning("The Spritesheet doesn't have the same number of sprites than the Rule Tile template has rules.");
         }
@@ -76,13 +85,13 @@ public class AutoRuleTile : ScriptableObject
             // Add all the animation sprites to the m_Sprites array
             for (int animSheetIndex = 0; animSheetIndex < SpriteSheets.Count; animSheetIndex++)
             {
-                _new.m_TilingRules[ruleIndex].m_Sprites[animSheetIndex] = spriteSheets[animSheetIndex][ruleIndex];
+                _new.m_TilingRules[ruleIndex].m_Sprites[animSheetIndex] = sprites[animSheetIndex][ruleIndex];
                 
-                Debug.Log("Rule Index " + ruleIndex + " is now " + spriteSheets[animSheetIndex][ruleIndex] + " (" + animSheetIndex + ")");
+                //Debug.Log("Rule Index " + ruleIndex + " is now " + spriteSheets[animSheetIndex][ruleIndex] + " (" + animSheetIndex + ")");
             }
             
             // Set the default sprite
-            _new.m_DefaultSprite = spriteSheets[0][24];
+            _new.m_DefaultSprite = sprites[0][24];
         }
 
         // Replace this Asset with the new one.
