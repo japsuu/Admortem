@@ -62,7 +62,7 @@ public class TerrainGenerator : MonoBehaviour
         Random.InitState(seed);
     }
 
-    private void Start()    //TODO: CREATE AND SCAN A GRIDGRAPH FOR PATHFINDING, AND SAVE IT TO A FILE!
+    private void Start()    //TODO: CREATE AND SCAN A GRID GRAPH FOR PATHFINDING, AND SAVE IT TO A FILE!
     {
         GenerateWorld();
     }

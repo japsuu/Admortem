@@ -1205,6 +1205,8 @@ MonoBehaviour:
     - {x: 1, y: 0, z: 0}
     - {x: 0, y: -1, z: 0}
     m_RuleTransform: 0
-  friendTiles: []
+  friendTiles:
+  - {fileID: 11400000, guid: c89096dfc289d914190a0e7c3cb5a22f, type: 2}
+  - {fileID: 11400000, guid: df08327e2a667f04fbdad0fe40670363, type: 2}
   alwaysJoinAllTiles: 0
   alwaysJoinFriends: 0

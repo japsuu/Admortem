@@ -218,6 +218,8 @@ public class ChunkIt : MonoBehaviour
         {
             SetColliderTile(pos, dummyTile, false);
         }
+        
+        Debug.Log("Colliders set");
     }
 
     /// <summary>

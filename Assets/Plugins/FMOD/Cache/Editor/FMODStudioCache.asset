@@ -328,7 +328,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 7092511981589767688}
+  - {fileID: 8454933054703628567}
   MinDistance: 0
   MaxDistance: 0
   Length: 335
@@ -990,9 +990,29 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637653119202600271
+  lastModified: 637673946026050155
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-1952620792542619948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FallSpeed
+  m_EditorClassIdentifier: 
+  Name: FallSpeed
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1335018703
+    data2: 10476994
   Exists: 1
 --- !u!114 &-1934042749823774292
 MonoBehaviour:
@@ -1009,7 +1029,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637653119201807015
+  lastModified: 637673946025882331
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1340,7 +1360,7 @@ MonoBehaviour:
   - {fileID: 4183982248683617977}
   StringsBanks:
   - {fileID: -1934042749823774292}
-  stringsBankWriteTime: 637653119201807015
+  stringsBankWriteTime: 637673946025882331
   cacheVersion: 6
 --- !u!114 &68076381368948939
 MonoBehaviour:
@@ -1691,7 +1711,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 637653119203236547
+  lastModified: 637673946026050155
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1983,7 +2003,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637653119201776982
+  lastModified: 637673946025882331
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2168,7 +2188,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 637653119201736969
+  lastModified: 637673946025781348
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2212,6 +2232,26 @@ MonoBehaviour:
     data1: 2633404382
     data2: 3596068718
   Exists: 0
+--- !u!114 &5354557743839727519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ClipIndex
+  m_EditorClassIdentifier: 
+  Name: ClipIndex
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2633404382
+    data2: 3596068718
+  Exists: 1
 --- !u!114 &5543390757979639529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2562,6 +2602,26 @@ MonoBehaviour:
     data1: 1335018703
     data2: 10476994
   Exists: 0
+--- !u!114 &8454933054703628567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/SfxStrength
+  m_EditorClassIdentifier: 
+  Name: SfxStrength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8619321539876904416
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using FMODUnity;
 using UnityEngine;
@@ -52,17 +53,6 @@ public class WorldManager : MonoBehaviour
             {
                 if (worldBundle[x, y] == null) continue;
 
-                //Debug.Log("Cell pos: " + new Vector2(x, y));
-                // Set the player SpawnPoint
-                //if (!spawnPointSet && x == halfWorldWidth)
-                //{
-                //    Debug.Log("Cell pos: " + new Vector3Int(x, y, 0));
-                //    GameController.PlayerSpawnPos = foregroundTilemap.LocalToWorld(new Vector2(0, y / 2));
-                //    spawnPointSet = true;
-                //    
-                //    Debug.Log("Spawn pos: " + GameController.PlayerSpawnPos);
-                //}
-                
                 foregroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), worldBundle[x, y].GetForegroundTile());
                 backgroundTilemap.SetTile(new Vector3Int(x - halfWorldWidth, y - halfWorldHeight, 0), worldBundle[x, y].GetBackgroundTile());
             }
