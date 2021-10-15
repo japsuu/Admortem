@@ -328,7 +328,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 8454933054703628567}
+  - {fileID: 4713797887068909924}
   MinDistance: 0
   MaxDistance: 0
   Length: 335
@@ -990,7 +990,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637673946026050155
+  lastModified: 637652583044393869
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637673946025882331
+  lastModified: 637652583043733271
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1355,12 +1355,14 @@ MonoBehaviour:
   - {fileID: 3856605933601769753}
   - {fileID: 3443918494210783246}
   - {fileID: -4425790342986910412}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: 925538420433691371}
+  - {fileID: 4462687413648320786}
   MasterBanks:
   - {fileID: 4183982248683617977}
   StringsBanks:
   - {fileID: -1934042749823774292}
-  stringsBankWriteTime: 637673946025882331
+  stringsBankWriteTime: 637652583043733271
   cacheVersion: 6
 --- !u!114 &68076381368948939
 MonoBehaviour:
@@ -1449,6 +1451,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 335
+--- !u!114 &925538420433691371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ClipIndex
+  m_EditorClassIdentifier: 
+  Name: ClipIndex
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2633404382
+    data2: 3596068718
+  Exists: 1
 --- !u!114 &1283060675349652537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,7 +1733,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 637673946026050155
+  lastModified: 637659411845865845
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2003,7 +2025,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637673946025882331
+  lastModified: 637652583043713246
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2070,6 +2092,26 @@ MonoBehaviour:
     data1: 2633404382
     data2: 3596068718
   Exists: 1
+--- !u!114 &4462687413648320786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FallSpeed
+  m_EditorClassIdentifier: 
+  Name: FallSpeed
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1335018703
+    data2: 10476994
+  Exists: 1
 --- !u!114 &4480195383266807368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2133,6 +2175,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &4713797887068909924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/SfxStrength
+  m_EditorClassIdentifier: 
+  Name: SfxStrength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &4914286878102855942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2188,7 +2250,7 @@ MonoBehaviour:
   Path: ./Admortem_FMOD/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 637673946025781348
+  lastModified: 637652583045055442
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2621,7 +2683,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8619321539876904416
 MonoBehaviour:
   m_ObjectHideFlags: 0
